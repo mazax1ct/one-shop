@@ -1,0 +1,175 @@
+.header
+  background-color: #fff
+  left: 0
+  position: fixed
+  padding-top: 12px
+  padding-bottom: 8px
+  top: 0
+  width: 100%
+  z-index: 10
+
+  &__inner
+    align-items: flex-start
+    display: flex
+
+  &__logo
+    margin-top: 4px
+    width: 139px
+
+  &__menu-block
+    display: flex
+    margin-left: auto
+
+  &__menus
+    align-items: flex-end
+    display: flex
+    flex-direction: column
+
+  &__links
+    align-items: flex-end
+    display: flex
+    flex-direction: column
+    margin-left: 56px
+
+  &__user-links
+    align-items: center
+    display: flex
+    padding-right: 25px
+
+  &__user-links-separate
+    background-color: $text-color
+    height: 39px
+    margin-left: 28px
+    margin-right: 25px
+    width: 1px
+
+  &__socials
+    display: flex
+
+  &__social
+    margin-right: 11px
+
+    &:last-child
+      margin-right: 15px
+
+.main-menu
+  font-size: 16px
+  font-weight: 700
+  line-height: 20px
+  margin-bottom: 6px
+
+  &__list
+    display: flex
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__item
+    margin-bottom: 0
+    margin-right: 44px
+
+    &:last-child
+      margin-right: 0
+
+  &__link
+    align-items: center
+    color: $text-color
+    display: flex
+    min-height: 55px
+    position: relative
+    padding-top: 15px
+    padding-bottom: 15px
+    text-decoration: none
+
+    &::after
+      background-image: linear-gradient(to left, #547a15, #2c5600 100%)
+      bottom: 0
+      content: ''
+      height: 5px
+      left: 0
+      position: absolute
+      top: auto
+      transition: width 0.3s
+      width: 0
+
+    &:hover
+      &::after
+        width: 100%
+
+    &.is-active
+      color: #325c04
+
+      &::after
+        display: none
+
+.service-menu
+  display: flex
+  font-size: 16px
+  line-height: 22px
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &__item
+    margin-bottom: 0
+
+    &:not(:last-child)
+      margin-right: 54px
+
+  &__link
+    border-bottom: 1px solid $main-color
+    color: $text-color
+    display: block
+    text-decoration: none
+    transition: border-color 0.3s
+
+    &:hover
+      border-bottom-color: transparent
+
+.social
+  align-items: center
+  display: flex
+  justify-content: center
+  height: 40px
+  width: 40px
+
+  &:hover
+    .social__icon
+      fill: darken($main-color, 5%)
+
+  &__icon
+    fill: $main-color
+    height: 40px
+    transition: fill 0.3s
+    width: 40px
+
+.user-link
+  align-items: center
+  color: $text-color
+  display: flex
+  font-size: 15px
+  font-weight: 700
+  min-height: 55px
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+  &__icon-block
+    align-items: center
+    display: flex
+    justify-content: center
+    height: 32px
+    margin-right: 12px
+    width: 32px
+
+    &--enter
+      border-radius: 50%
+      background-color: $main-color
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-image: url('../images/icons/lock.png')
+      background-size: 12px auto
+
+  &__icon
+    fill: $main-color

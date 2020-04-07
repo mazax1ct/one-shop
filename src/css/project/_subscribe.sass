@@ -1,0 +1,82 @@
+.subscribe
+  background-color: $main-color
+  color: #fff
+  overflow: hidden
+  padding-top: 105px
+  padding-bottom: 120px
+
+  &__title
+    font-size: 36px
+    line-height: 1.33333
+    margin-bottom: 1em
+    text-align: center
+
+  &__form
+    align-items: center
+    background-color: #fff
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+    max-width: 692px
+    margin-left: auto
+    margin-right: auto
+    padding-right: 5px
+    position: relative
+    z-index: 1
+
+    &::after
+      background: url('../images/bg/subscribe.png') no-repeat 0 0 / 100% auto transparent
+      content: ''
+      height: 284px
+      left: auto
+      position: absolute
+      right: -383px
+      top: -115px
+      width: 457px
+      z-index: -1
+
+  &__input
+    border: none
+    font-size: 16px
+    flex-grow: 1
+    height: 65px
+    line-height: 22px
+    padding-left: 33px
+    padding-right: 33px
+    padding-top: 23px
+    padding-bottom: 20px
+
+    &::-webkit-input-placeholder
+      color: #979797
+      opacity: 1
+
+    &::-moz-placeholder
+      color: #979797
+      opacity: 1
+
+    &:-ms-input-placeholder
+      color: #979797
+      opacity: 1
+
+  &__submit
+    background-color: $main-color
+    border: none
+    color: #fff
+    cursor: pointer
+    font-size: 16px
+    font-weight: 600
+    height: 55px
+    line-height: 22px
+    transition: background-color 0.3s
+    width: 200px
+
+    &:hover
+      background-color: darken($main-color, 5%)
+
+  &__note
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+
+    a
+      color: #fff
