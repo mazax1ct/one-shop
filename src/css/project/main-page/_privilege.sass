@@ -1,0 +1,62 @@
+.privilege-block
+  display: flex
+  margin-left: -50px
+  margin-right: -50px
+  margin-bottom: 125px
+
+  @media(min-width: 1600px)
+    margin-left: -67px
+    margin-right: -67px
+
+  &__title
+    display: flex
+    margin-bottom: 48px
+
+    h2
+      margin-top: -10px
+      margin-bottom: 0
+      width: 45%
+
+    p
+      border-left: 5px solid $text-color
+      padding-left: 15px
+      width: 55%
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding-left: 50px
+    padding-right: 50px
+
+    @media(min-width: 1600px)
+      padding-left: 67px
+      padding-right: 67px
+
+    &:nth-child(1)
+      min-width: 53.85%
+      width: 53.85%
+
+.privilege-image
+  margin: 0
+
+  &__caption
+    font-size: 18px
+    font-weight: 700
+    line-height: 22px
+    min-height: 2.44444em
+    margin-top: 1em
+
+.privilege-cols
+  display: flex
+  margin-left: -27px
+  margin-right: -27px
+  margin-bottom: -25px
+
+  &__col
+    padding-left: 27px
+    padding-right: 27px
+    width: 50%
+
+    .privilege-image
+      margin-bottom: 25px

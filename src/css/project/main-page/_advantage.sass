@@ -1,0 +1,48 @@
+.advantage-block
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  &__item
+    &:nth-child(1)
+      max-width: 41%
+      margin-right: -50px
+      order: 2
+
+      @media(min-width: 1600px)
+        margin-right: -100px
+
+    &:nth-child(2)
+      max-width: 59%
+      order: 1
+
+    &:nth-child(3)
+      order: 3
+      padding-left: 17.14285%
+
+.advantage
+  align-items: flex-end
+  display: flex
+
+  &__image
+    margin-right: 60px
+
+    &--big
+      max-width: 40.56%
+
+    &--mid
+      max-width: 45.3%
+
+    &--small
+      max-width: 31.25%
+
+  &__title
+    border-left: 3px solid $text-color
+    font-size: 18px
+    font-weight: 700
+    line-height: 22px
+    max-width: 235px
+    margin-left: -15px
+    min-height: 3.66666em
+    position: relative
+    padding-left: 15px

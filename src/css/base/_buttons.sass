@@ -1,26 +1,40 @@
 .button
-  background-color: #00c220
-  border: none
-  border-radius: 5px
-  color: #fff
+  background-color: transparent
+  border: 1px solid $text-color
+  border-radius: 0
+  color: $text-color
   cursor: pointer
   display: inline-block
-  font-family: inherit
-  font-size: inherit
-  line-height: 18px
-  padding: 11px 14px
+  font-family: $main-font
+  font-size: 16px
+  font-weight: 700
+  line-height: 22px
+  min-height: 55px
+  min-width: 236px
+  overflow: hidden
+  padding: 16px 15px 17px
+  position: relative
   text-decoration: none
   text-align: center
+  transition: color 0.3s
   vertical-align: middle
 
-  &:hover,
-  &:active
-    background-color: #00d123
+  &::after
+    background-image: linear-gradient(to left, #547a15, #2c5600 100%)
+    content: ''
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    transition: width 0.3s
+    width: 0
+    z-index: -1
+
+  &:hover
     color: #fff
 
-  &:focus
-    box-shadow: 0 0 5px 2px #00d123
-    outline: 1px dotted #000
+    &::after
+      width: 100%
 
   &:disabled,
   &.disabled
