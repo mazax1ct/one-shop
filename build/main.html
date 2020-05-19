@@ -55,6 +55,19 @@
     <symbol id="cart" viewBox="0 0 29 25">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39 7.82003L11.86 1.35003C12.1679 1.0269 12.6267 0.895923 13.0588 1.00781C13.4909 1.11969 13.8285 1.45688 13.9408 1.88884C14.0532 2.32081 13.9228 2.77975 13.6 3.08803L8.87 7.82003H5.39ZM20.07 7.82003H23.54L17.08 1.35003C16.5969 0.888643 15.8339 0.89719 15.3612 1.36928C14.8886 1.84138 14.8792 2.60441 15.34 3.08803L20.07 7.82003ZM0 9.55203V12.361H0.78C1.42272 12.3611 2.00903 12.728 2.29 13.306L7.54 24.038H21.42L26.65 13.308C26.9308 12.7295 27.517 12.3619 28.16 12.361H28.93V9.55203H0Z"/>
     </symbol>
+    <symbol id="burger" viewBox="0 0 30 25">
+      <rect y="0.25" width="30" height="3"/>
+      <rect y="10.75" width="30" height="3"/>
+      <rect y="21.25" width="30" height="3"/>
+    </symbol>
+    <symbol id="close" viewBox="0 0 16 16">
+      <rect x="0.443359" y="14.1422" width="20" height="2" transform="rotate(-45 0.443359 14.1422)"/>
+      <rect x="1.85742" width="20" height="2" transform="rotate(45 1.85742 0)"/>
+    </symbol>
+    <symbol id="subscribe_arrow" viewBox="0 0 32 18">
+      <path d="M22.9766 17.2143C22.6766 17.2143 22.4766 17.1143 22.2766 16.9143C21.8766 16.5143 21.8766 15.9143 22.2766 15.5143L28.9766 8.91426L22.2766 2.31426C21.8766 1.91426 21.8766 1.31426 22.2766 0.914258C22.6766 0.514258 23.2766 0.514258 23.6766 0.914258L31.0766 8.21426C31.2766 8.41426 31.3766 8.61426 31.3766 8.91426C31.3766 9.21426 31.2766 9.41426 31.0766 9.61426L23.6766 16.9143C23.4766 17.1143 23.2766 17.2143 22.9766 17.2143Z"/>
+      <path d="M30.3758 9.91406H1.67578C1.07578 9.91406 0.675781 9.51406 0.675781 8.91406C0.675781 8.31406 1.07578 7.91406 1.67578 7.91406H30.3758C30.9758 7.91406 31.3758 8.31406 31.3758 8.91406C31.3758 9.51406 30.9758 9.91406 30.3758 9.91406Z"/>
+    </symbol>
   </svg>
 
   <div class="wrapper">
@@ -78,12 +91,39 @@
               <li class="service-menu__item"><a class="service-menu__link" href="#">Написать нам</a></li>
               <li class="service-menu__item"><a class="service-menu__link" href="#">Тех. поддержка</a></li>
             </ul>
+            <div class="header__socials">
+              <a class="header__social social" href="#" title="vk.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#vk" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="ok.ru" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#ok" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="youtube.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#yt" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="facebook.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#fb" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="instagram.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#inst" />
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="header__links">
             <div class="header__user-links">
               <a class="header__user-link user-link" href="#">
                 <span class="user-link__icon-block user-link__icon-block--enter"></span>
-                Вход
+                <span class="user-link__text">Вход</span>
               </a>
               <span class="header__user-links-separate"></span>
               <a class="header__user-link user-link" href="#">
@@ -92,8 +132,16 @@
                     <use xlink:href="#cart" />
                   </svg>
                 </span>
-                Корзина
+                <span class="user-link__text">Корзина</span>
               </a>
+              <button class="js-menu-toggler menu-toggler" type="button">
+                <svg class="menu-toggler__burger" aria-hidden="true">
+                  <use xlink:href="#burger" />
+                </svg>
+                <svg class="menu-toggler__close" aria-hidden="true">
+                  <use xlink:href="#close" />
+                </svg>
+              </button>
             </div>
             <div class="header__socials">
               <a class="header__social social" href="#" title="vk.com" target="_blank">
@@ -136,9 +184,9 @@
             <div class="block-1__decor" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_1/img_2@2.jpg" alt=""></div>
             <div class="block-1__description">
               <p class="way__pre-title" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
-              <h1 class="way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">3D-дома</h1>
+              <h1 class="way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">3D‑дома</h1>
               <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Забудьте все, что Вы знали о строительстве домов. Теперь собственное жилье доступно каждому</p>
-              <a class="button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
+              <a class="way__button button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
             </div>
           </div>
         </div>
@@ -152,9 +200,9 @@
         <div class="block-2__text-block">
           <div class="block-2__description">
             <p class="way__pre-title" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
-            <h2 class="way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Товары</h2>
+            <h2 class="block-2__title way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Товары</h2>
             <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Мы провели огромную работу - ради одной цели. И эта цель - Сделать так, чтобы Вы были уверенны в том, что попадает к Вам на стол</p>
-            <a class="button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
+            <a class="way__button button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
           </div>
           <!--<div class="block-2__decor" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_2/img_3@2.jpg" alt=""></div>-->
         </div>
@@ -163,13 +211,15 @@
       <div class="block-3 way">
         <div class="block-3__image" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_3/img_1@2.jpg" alt=""></div>
         <div class="block-3__text-block">
-          <div class="block-3__description">
-            <p class="way__pre-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
-            <h1 class="way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Топливная<br> программа</h1>
-            <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Вместе с компанией OneShop Вы прикоснетесь к миру больших денег</p>
-            <a class="button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
+          <div class="block-3__text-block-inner">
+            <div class="block-3__decor" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_3/img_2@2.jpg" alt=""></div>
+            <div class="block-3__description">
+              <p class="block-3__pre-title way__pre-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
+              <h1 class="block-3__title way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Топливная<br> программа</h1>
+              <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Вместе с компанией OneShop Вы прикоснетесь к миру больших денег</p>
+              <a class="way__button button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
+            </div>
           </div>
-          <div class="block-3__decor" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_3/img_2@2.jpg" alt=""></div>
         </div>
       </div>
 
@@ -211,36 +261,9 @@
           </div>
         </div>
 
-        <h2 class="text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">О Компании</h2>
-        <div class="banner" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000" data-aos-mirror="false" data-aos-once="true">
-          <div class="banner__image" style="background-image: url(images/content/main-page/block_5/img_1@2.jpg)"></div>
-          <div class="banner__text-block">
-            <h3 class="banner__title">One Shop - единый магазин доставки на дом и в офис продуктов, а также иных товаров первой необходимости.</h3>
-            <p>Сделать заказ можно в личном кабинете или по бесплатному номеру телефона. Купить качественные и вкусные продукты, хозяйственные товары, организовать торжество дома или в офисе просто и удобно - нужно просто сделать заказ в One Shop!</p>
-          </div>
-        </div>
+        ///= template/main-page/about-company.html
 
-        <div class="advantage-block">
-          <div class="advantage-block__item" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-            <h2 class="advantage-block__title">Наши<br> преимущества</h2>
-            <div class="advantage">
-              <div class="advantage__image advantage__image--mid"><img src="images/content/main-page/block_6/img_2@2.jpg" alt=""></div>
-              <p class="advantage__title">Мы выбираем только лучшие из них</p>
-            </div>
-          </div>
-          <div class="advantage-block__item" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-            <div class="advantage">
-              <div class="advantage__image advantage__image--big"><img src="images/content/main-page/block_6/img_1@2.jpg" alt=""></div>
-              <p class="advantage__title">Любимые продукты для любимых клиентов</p>
-            </div>
-          </div>
-          <div class="advantage-block__item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-            <div class="advantage">
-              <div class="advantage__image advantage__image--small"><img src="images/content/main-page/block_6/img_3@2.jpg" alt=""></div>
-              <p class="advantage__title">Огромный выбор всевозможных товаров</p>
-            </div>
-          </div>
-        </div>
+        ///= template/main-page/advantage.html
       </div>
     </div>
   </div>
@@ -251,17 +274,24 @@
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <form class="subscribe__form" action="">
           <input class="subscribe__input" type="text" name="subscribe" value="" placeholder="Введите ваш email…">
-          <button class="subscribe__submit" type="submit">Подписаться</button>
+          <button class="subscribe__submit" type="submit">
+            <svg class="subscribe__submit-icon" aria-hidden="true">
+              <use xlink:href="#subscribe_arrow" />
+            </svg>
+            <span class="subscribe__submit-text">Подписаться</span>
+          </button>
         </form>
         <p class="subscribe__note">Нажимая на кнопку "Подписаться", вы даёте своё согласие на обработку<br> <a href="#">персональных данных</a></p>
       </div>
     </div>
     <div class="footer__inner container">
-      <p class="footer__copyright">© One Shop World Ltd. 2020</p>
-      <ul class="footer__links">
-        <li class="footer__links-item"><a class="footer__link" href="#">Условия обработки персональных данных</a></li>
-        <li class="footer__links-item"><a class="footer__link" href="#">Политика в отношении обработки персональных данных</a></li>
-      </ul>
+      <div class="footer__left">
+        <p class="footer__copyright">© One Shop World Ltd. 2020</p>
+        <ul class="footer__links">
+          <li class="footer__links-item"><a class="footer__link" href="#">Условия обработки персональных данных</a></li>
+          <li class="footer__links-item"><a class="footer__link" href="#">Политика в отношении обработки персональных данных</a></li>
+        </ul>
+      </div>
       <div class="footer__contacts">
         <p class="footer__contact">Email:<br> <a class="footer__contact-link" href="mailto:info@one-shopw.com">info@one-shopw.com</a></p>
         <p class="footer__contact">Тех. поддержка:<br> <a class="footer__contact-link" href="mailto:texpomosh@one-shopw.com">texpomosh@one-shopw.com</a></p>
@@ -269,11 +299,14 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
   <script type="text/javascript" src="js/aos.js"></script>
   <script>
-    AOS.init();
+    if($('body').width()> 767){
+      AOS.init();
+    }
   </script>
 </body>
 

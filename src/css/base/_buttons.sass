@@ -6,18 +6,26 @@
   cursor: pointer
   display: inline-block
   font-family: $main-font
-  font-size: 16px
+  font-size: 12px
   font-weight: 700
   line-height: 22px
-  min-height: 55px
-  min-width: 236px
+  min-height: 42px
+  min-width: 180px
   overflow: hidden
-  padding: 16px 15px 17px
+  padding: 9px 15px
   position: relative
   text-decoration: none
   text-align: center
   transition: color 0.3s
   vertical-align: middle
+
+  @media(min-width: 1280px)
+    font-size: 16px
+
+  @media(min-width: 1600px)
+    min-height: 55px
+    max-width: 236px
+    padding: 16px 15px 17px
 
   &::after
     background-image: linear-gradient(to left, #547a15, #2c5600 100%)

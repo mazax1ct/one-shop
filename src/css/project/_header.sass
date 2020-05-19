@@ -2,84 +2,164 @@
   background-color: #fff
   left: 0
   position: fixed
-  padding-top: 12px
-  padding-bottom: 8px
+  padding-top: 10px
+  padding-bottom: 10px
   top: 0
   width: 100%
   z-index: 10
 
+  @media(min-width: 1280px)
+    padding-top: 30px
+    padding-bottom: 30px
+
   &__inner
-    align-items: flex-start
+    align-items: center
     display: flex
+    justify-content: space-between
 
   &__logo
-    margin-top: 4px
-    width: 139px
+    width: 52px
+
+    @media(min-width: 768px)
+      width: 83px
+
+    @media(min-width: 1280px)
+      min-width: 139px
+      width: 139px
 
   &__menu-block
     display: flex
-    margin-left: auto
+    //margin-left: auto
 
   &__menus
-    align-items: flex-end
-    display: flex
+    align-items: center
+    display: none
     flex-direction: column
+    height: calc(100% - 50px)
+    justify-content: center
+    left: 0
+    position: fixed
+    top: 50px
+    width: 100%
+    z-index: 1
+
+    @media(min-width:768px)
+      top: 70px
+
+    &.is-open
+      background-color: #fff
+      display: flex
+
+    @media(min-width: 1280px)
+      align-items: flex-end
+      display: flex
+      left: auto
+      position: static
+      top: auto
+      width: auto
+
+    .header__socials
+      display: flex
+
+      @media(min-width: 1280px)
+        display: none
 
   &__links
-    align-items: flex-end
-    display: flex
-    flex-direction: column
-    margin-left: 56px
+    @media(min-width: 768px)
+      align-items: flex-end
+      display: flex
+      flex-direction: column
+      margin-left: 56px
+
+    @media(min-width: 1280px)
+      margin-left: 34px
+
+    @media(min-width: 1600px)
+      margin-left: 52px
 
   &__user-links
     align-items: center
     display: flex
-    padding-right: 25px
 
   &__user-links-separate
-    background-color: $text-color
-    height: 39px
-    margin-left: 28px
-    margin-right: 25px
-    width: 1px
+    @media(min-width: 768px)
+      background-color: $text-color
+      height: 39px
+      margin-left: 28px
+      margin-right: 25px
+      width: 1px
 
   &__socials
-    display: flex
+    display: none
+
+    @media(min-width: 1280px)
+      display: flex
 
   &__social
-    margin-right: 11px
+    @media(min-width: 768px)
+      margin-right: 11px
 
     &:last-child
-      margin-right: 15px
+      margin-right: 0
+
+      @media(min-width: 1280px)
+        margin-right: -11px
 
 .main-menu
   font-size: 16px
   font-weight: 700
   line-height: 20px
-  margin-bottom: 6px
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 120px
+
+  @media(min-width: 1280px)
+    font-size: 16px
+    margin-bottom: 6px
 
   &__list
-    display: flex
     list-style: none
     margin: 0
     padding: 0
 
+    @media(min-width: 1280px)
+      display: flex
+
   &__item
-    margin-bottom: 0
-    margin-right: 44px
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      margin-bottom: 45px
+
+    @media(min-width: 1280px)
+      margin-bottom: 0
+      margin-right: 25px
+
+    @media(min-width: 1600px)
+      margin-right: 44px
 
     &:last-child
       margin-right: 0
+      margin-bottom: 0
 
   &__link
     align-items: center
     color: $text-color
     display: flex
-    min-height: 55px
+    justify-content: center
     position: relative
-    padding-top: 15px
-    padding-bottom: 15px
+    padding-top: 5px
+    padding-bottom: 5px
     text-decoration: none
+
+    @media(min-width: 1280px)
+      justify-content: flex-start
+      min-height: 55px
+      padding-top: 10px
+      padding-bottom: 10px
 
     &::after
       background-image: linear-gradient(to left, #547a15, #2c5600 100%)
@@ -104,11 +184,16 @@
 
 .service-menu
   display: flex
-  font-size: 16px
-  line-height: 22px
+  font-size: 12px
+  line-height: 16px
   list-style: none
-  margin: 0
+  margin: 0 0 30px
   padding: 0
+
+  @media(min-width: 1280px)
+    font-size: 16px
+    line-height: 20px
+    margin: 0
 
   &__item
     margin-bottom: 0
@@ -116,10 +201,17 @@
     &:not(:last-child)
       margin-right: 54px
 
+      @media(min-width: 1280px)
+        margin-right: 34px
+
+      @media(min-width: 1600px)
+        margin-right: 54px
+
   &__link
     border-bottom: 1px solid $main-color
     color: $text-color
     display: block
+    padding-bottom: 3px
     text-decoration: none
     transition: border-color 0.3s
 
@@ -139,9 +231,13 @@
 
   &__icon
     fill: $main-color
-    height: 40px
+    height: 30px
     transition: fill 0.3s
-    width: 40px
+    width: 30px
+
+    @media(min-width: 768px)
+      height: 40px
+      width: 40px
 
 .user-link
   align-items: center
@@ -149,19 +245,36 @@
   display: flex
   font-size: 15px
   font-weight: 700
-  min-height: 55px
+  justify-content: center
+  min-height: 30px
+  min-width: 30px
+  margin-right: 12px
   text-decoration: none
+
+  @media(min-width: 768px)
+    margin-right: 0
+    min-height: 50px
+
+  @media(min-width: 1280px)
+    min-height: 55px
 
   &:hover
     text-decoration: underline
+
+  &:last-child
+    margin-right: 0
 
   &__icon-block
     align-items: center
     display: flex
     justify-content: center
-    height: 32px
-    margin-right: 12px
-    width: 32px
+    height: 21px
+    width: 21px
+
+    @media(min-width: 768px)
+      height: 36px
+      margin-right: 12px
+      width: 36px
 
     &--enter
       border-radius: 50%
@@ -169,7 +282,71 @@
       background-position: 50% 50%
       background-repeat: no-repeat
       background-image: url('../images/icons/lock.png')
-      background-size: 12px auto
+      background-size: 8px auto
+
+      @media(min-width: 768px)
+        background-size: 12px auto
 
   &__icon
     fill: $main-color
+    height: 21px
+    width: 21px
+
+    @media(min-width: 768px)
+      height: 36px
+      width: 36px
+
+  &__text
+    @media(max-width: 767px)
+      position: absolute !important
+      height: 1px
+      width: 1px
+      overflow: hidden
+      clip: rect(1px 1px 1px 1px)
+      clip: rect(1px, 1px, 1px, 1px)
+      white-space: nowrap
+
+.menu-toggler
+  align-items: center
+  background-color: transparent
+  border: none
+  cursor: pointer
+  display: flex
+  height: 30px
+  justify-content: center
+  padding: 0
+  text-align: center
+  width: 30px
+
+  @media (min-width: 768px)
+    height: 50px
+    justify-content: flex-end
+    margin-left: 48px
+    width: 50px
+
+  @media (min-width: 1280px)
+    display: none
+
+  &__burger,
+  &__close
+    fill: #FF121C
+
+  &__burger
+    height: 16px
+    width: 20px
+
+    @media (min-width: 768px)
+      height: 24px
+      width: 30px
+
+  &__close
+    display: none
+    height: 16px
+    width: 16px
+
+  &.is-active
+    .menu-toggler__burger
+      display: none
+
+    .menu-toggler__close
+      display: block
