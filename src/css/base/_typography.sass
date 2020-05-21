@@ -134,7 +134,24 @@ ol
         top: 0
 
 .table-container
+  margin-bottom: 30px
+  margin-right: $margin-right-indent
   overflow-x: auto
+
+  @media(min-width: 768px)
+    margin-right: $margin-right-indent-768
+    margin-bottom: 60px
+
+  @media(min-width: 1280px)
+    margin-right: $margin-right-indent-1280
+    margin-left: $margin-left-indent-1280
+
+  @media(min-width: 1600px)
+    margin-right: $margin-right-indent-1600
+    margin-left: $margin-left-indent-1600
+
+  @media(min-width: 1920px)
+    margin-right: 0
 
 table
   border-collapse: collapse
@@ -149,6 +166,7 @@ table
     line-height: 12px
     padding: 20px
     text-align: left
+    vertical-align: top
 
     @media(min-width: 768px)
       font-size: 14px
@@ -178,30 +196,30 @@ img
 
 .grey-block
   background-color: #F1F3F5
-  margin-left: -10px
-  margin-right: -10px
+  margin-left: $margin-left-indent
+  margin-right: $margin-right-indent
   margin-top: 35px
   margin-bottom: 35px
   padding: 50px 10px
 
   @media(min-width: 768px)
-    margin-left: -25px
-    margin-right: -25px
+    margin-left: $margin-left-indent-768
+    margin-right: $margin-right-indent-768
     padding-right: 25px
     padding-left: 25px
     padding-top: 90px
     padding-bottom: 90px
 
   @media(min-width: 1280px)
-    margin-left: -40px
-    margin-right: -50px
+    margin-left: $margin-left-indent-1280
+    margin-right: $margin-right-indent-1280
     margin-bottom: 60px
     margin-top: 60px
     padding-right: 100px
     padding-left: 150px
 
   @media(min-width: 1600px)
-    margin-left: -50px
+    margin-left: $margin-left-indent-1600
     margin-right: 0
     padding-right: 100px
     padding-left: 160px
@@ -281,16 +299,16 @@ img
 
   @media(min-width: 768px)
     margin-top: 115px
-    margin-left: -25px
-    margin-right: -25px
+    margin-left: $margin-left-indent-768
+    margin-right: $margin-right-indent-768
 
   @media(min-width: 1280px)
     margin-top: 130px
-    margin-left: -40px
-    margin-right: -50px
+    margin-left: $margin-left-indent-1280
+    margin-right: $margin-right-indent-1280
 
   @media(min-width: 1600px)
-    margin-left: -50px
+    margin-left: $margin-left-indent-1600
     margin-right: 0
 
   &__caption-block
@@ -352,3 +370,118 @@ img
     a
       font-family: $secondary-font
       font-style: italic
+
+.fu-block2
+  margin-top: 70px
+  margin-bottom: 70px
+
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+
+  @media(min-width: 1280px)
+    margin-left: $margin-left-indent-1280
+
+  @media(min-width: 1600px)
+    margin-left: $margin-left-indent-1600
+
+  &__image
+    margin-bottom: 45px
+    padding-left: 50px
+    padding-right: 50px
+    text-align: center
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 29.25%
+      padding-left: 0
+      padding-right: 25px
+      width: 29.25%
+
+    @media(min-width: 1280px)
+      min-width: 250px
+      max-width: 250px
+      text-align: left
+      width: 250px
+
+    @media(min-width: 1600px)
+      min-width: 275px
+      max-width: 275px
+      width: 275px
+
+    img
+      max-width: 185px
+
+  &__text
+    border-top: 3px solid #000
+    border-bottom: 3px solid #000
+    font-family: $secondary-font
+    font-style: italic
+    font-size: 24px
+    line-height: 32px
+    margin: 0
+    max-width: 645px
+    padding: 75px 0 45px
+    position: relative
+    text-align: center
+
+    @media(min-width: 768px)
+      padding-left: 62px
+      padding-right: 62px
+
+    @media(min-width: 1280px)
+      padding-left: 68px
+      padding-right: 68px
+
+    &::before,
+    &::after
+      font-size: 55px
+      line-height: 70px
+      position: absolute
+
+    &::before
+      content: '«'
+      left: 0
+      top: 0
+
+      @media(min-width: 768px)
+        top: 48px
+
+    &::after
+      bottom: 0
+      content: '»'
+      left: auto
+      right: 10px
+      top: auto
+
+      @media(min-width: 768px)
+        bottom: 48px
+
+.fu-block3
+  margin-top: 70px
+  margin-bottom: 70px
+
+  @media(min-width: 768px)
+    display: flex
+
+  @media(min-width: 1280px)
+    margin-left: $margin-left-indent-1280
+
+  @media(min-width: 1600px)
+    margin-left: $margin-left-indent-1600
+
+  &__image
+    @media(min-width: 768px)
+      padding-right: 12px
+      width: 50%
+
+    @media(min-width: 1280px)
+      padding-right: 35px
+
+  &__text
+    @media(min-width: 768px)
+      padding-left: 12px
+      width: 50%
+
+    @media(min-width: 1280px)
+      padding-left: 35px

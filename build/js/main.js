@@ -11,6 +11,11 @@ var resize_scroll = function(e) {
 $(document).ready(function () {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  //кастомный скролл
+  $('.js-custom-scroll').each(function(index, element) {
+    new SimpleBar(element, { autoHide: false })
+  });
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
