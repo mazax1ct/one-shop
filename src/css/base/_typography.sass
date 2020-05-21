@@ -10,56 +10,63 @@ body
     font-size: 15px
     line-height: 23px
 
+a
+  color: $main-color
+
 h1,.h1,
 h2,.h2,
 h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6
-  font-family: $secondary-font
   font-weight: 700
   margin-top: 0
 
-h1,
-.h1,
-h2,
-.h2
+  &:last-child
+    margin-bottom: 0
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+  font-family: $secondary-font
+
+h1,.h1,
+h2,.h2
   font-size: 24px
   line-height: 32px
   margin-bottom: 18px
 
-h1,
-.h1
+h1,.h1
   @media(min-width: 768px)
     font-size: 42px
     line-height: 54px
     margin-bottom: 50px
 
-h2,
-.h2
+h2,.h2
   @media(min-width: 768px)
     font-size: 36px
     line-height: 47px
     margin-bottom: 40px
 
-h3,
-.h3
+h3,.h3
   font-size: 18px
   line-height: 24px
-  margin-bottom: 10px
+  margin-bottom: 24px
 
   @media(min-width: 768px)
     font-size: 24px
     line-height: 32px
-    margin-bottom: 30px
+    margin-bottom: 40px
 
-h4,
-.h4,
-h5,
-.h5
+h4,.h4,
+h5,.h5
+  font-family: $main-font
+
+h4,.h4,
+h5,.h5
   font-size: 14px
   line-height: 17px
-  margin-bottom: 10px
+  margin-bottom: 20px
 
   @media(min-width: 768px)
     font-size: 18px
@@ -69,8 +76,7 @@ h5,
 p,
 ul,
 ol,
-table,
-.table-responsive
+table
   margin-top: 0
   margin-bottom: 20px
 
@@ -84,7 +90,11 @@ ol
 
 ul
   &:not([class])
+    @media(min-width: 768px)
+      padding-left: 45px
+
     li
+      margin-bottom: 25px
       padding-left: 27px
       position: relative
 
@@ -95,9 +105,36 @@ ul
         height: 10px
         left: 0
         position: absolute
-        top: 0
+        top: 5px
         width: 10px
         z-index: 1
+
+ol
+  &:not([class])
+    counter-reset: myCounter
+    font-size: 15px
+    line-height: 23px
+
+    li
+      position: relative
+      padding-left: 35px
+
+      &:not(:last-child)
+        margin-bottom: 35px
+
+      &::before
+        counter-increment: myCounter
+        content: counter(myCounter)' /'
+        color: $main-color
+        font-family: $secondary-font
+        font-size: 20px
+        font-weight: 700
+        left: 0
+        position: absolute
+        top: 0
+
+.table-container
+  overflow-x: auto
 
 table
   border-collapse: collapse
@@ -105,14 +142,213 @@ table
   text-align: left
   width: 100%
 
-  th,
+  th
+    color: #999
+    font-size: 10px
+    font-weight: 400
+    line-height: 12px
+    padding: 20px
+    text-align: left
+
+    @media(min-width: 768px)
+      font-size: 14px
+      line-height: 17px
+
   td
-    border: none
-    border-bottom: 1px solid
-    padding: 10px
-    vertical-align: top
+    border: 1px solid #DBDBDB
+    padding: 20px
+    vertical-align: middle
+
+  .filled
+    background-color: rgba(#4D8704, 0.3)
 
 img
   height: auto
   max-width: 100%
   vertical-align: top
+
+.serif
+  font-family: $secondary-font
+
+.text-block
+  max-width: 620px
+
+  @media(min-width: 1600px)
+    max-width: 680px
+
+.grey-block
+  background-color: #F1F3F5
+  margin-left: -10px
+  margin-right: -10px
+  margin-top: 35px
+  margin-bottom: 35px
+  padding: 50px 10px
+
+  @media(min-width: 768px)
+    margin-left: -25px
+    margin-right: -25px
+    padding-right: 25px
+    padding-left: 25px
+    padding-top: 90px
+    padding-bottom: 90px
+
+  @media(min-width: 1280px)
+    margin-left: -40px
+    margin-right: -50px
+    margin-bottom: 60px
+    margin-top: 60px
+    padding-right: 100px
+    padding-left: 150px
+
+  @media(min-width: 1600px)
+    margin-left: -50px
+    margin-right: 0
+    padding-right: 100px
+    padding-left: 160px
+
+  &:last-child
+    margin-bottom: 0
+
+  ol
+    &:not([class])
+      li
+        @media(min-width: 768px)
+          padding-left: 140px
+
+        &::before
+          @media(min-width: 768px)
+            font-size: 36px
+            top: 0.25em
+
+.fu-block
+  color: #335A00
+  font-family: $secondary-font
+  font-style: italic
+  font-size: 20px
+  line-height: 27px
+  margin: 35px auto
+  max-width: 645px
+  padding: 120px 0
+  position: relative
+  text-align: center
+
+  @media(min-width: 768px)
+    font-size: 28px
+    line-height: 36px
+
+  @media(min-width: 1280px)
+    margin-top: 50px
+    margin-bottom: 50px
+
+  &::before,
+  &::after
+    background-color: $text-color
+    content: ''
+    height: 90px
+    left: 50%
+    position: absolute
+    width: 1px
+    z-index: 1
+
+  &::before
+    top: 0
+
+  &::after
+    bottom: 0
+    top: auto
+
+  & + .fu-block-caption
+    margin-bottom: 50px
+    text-align: center
+
+    @media(min-width: 1600px)
+      margin-bottom: 80px
+
+.big-text
+  font-size: 18px
+  font-weight: 700
+  line-height: 25px
+  margin-bottom: 24px
+
+  @media(min-width: 768px)
+    margin-bottom: 40px
+
+.image-block
+  margin-left: 0
+  margin-right: 0
+  margin-top: 50px
+  margin-bottom: 50px
+
+  @media(min-width: 768px)
+    margin-top: 115px
+    margin-left: -25px
+    margin-right: -25px
+
+  @media(min-width: 1280px)
+    margin-top: 130px
+    margin-left: -40px
+    margin-right: -50px
+
+  @media(min-width: 1600px)
+    margin-left: -50px
+    margin-right: 0
+
+  &__caption-block
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+
+  &__caption
+    font-size: 14px
+    font-weight: 600
+    font-style: italic
+    margin-bottom: 25px
+    position: relative
+    padding-bottom: 25px
+
+    &::after
+      background-color: #000
+      bottom: 0
+      content: ''
+      height: 1px
+      left: 0
+      position: absolute
+      top: auto
+      width: 215px
+      z-index: 1
+
+      @media(min-width: 768px)
+        left: 25px
+
+      @media(min-width: 1280px)
+        left: 0
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-left: 25px
+      padding-right: 25px
+      width: 50%
+
+    @media(min-width: 1280px)
+      padding-left: 0
+
+  &__description
+    font-size: 15px
+    line-height: 23px
+
+    @media(min-width: 768px)
+      margin-left: auto
+      max-width: 450px
+      padding-left: 25px
+      padding-right: 25px
+      width: 50%
+
+    @media(min-width: 1280px)
+      padding-right: 50px
+
+    @media(min-width: 1600px)
+      padding-right: 0
+
+    a
+      font-family: $secondary-font
+      font-style: italic

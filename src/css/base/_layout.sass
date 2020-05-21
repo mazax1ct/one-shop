@@ -53,3 +53,21 @@ body
   @media(min-width: 1280px)
     padding-top: 175px
     padding-bottom: 100px
+
+.page-columns
+  @media(min-width: 1280px)
+    display: flex
+
+  &__left
+    @media(min-width: 1280px)
+      min-width: 24.15254%
+      padding-right: 50px
+      width: 24.15254%
+
+    @media(min-width: 1600px)
+      min-width: 25.71428%
+      padding-right: 60px
+      width: 25.71428%
+
+  &__right
+    flex-grow: 1

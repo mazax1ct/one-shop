@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>One-shop - О магазине</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#376006">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="vk" viewBox="0 0 40 40">
+      <path d="M19.7,27.5h1.6c0,0,0.5-0.1,0.7-0.3c0.2-0.2,0.2-0.7,0.2-0.7s0-2.1,1-2.4c1-0.3,2.3,2,3.7,2.9c1,0.7,1.8,0.5,1.8,0.5l3.7,0c0,0,1.9-0.1,1-1.6c-0.1-0.1-0.5-1.1-2.7-3c-2.3-2.1-2-1.7,0.8-5.3c1.7-2.2,2.4-3.5,2.1-4c-0.2-0.5-1.4-0.4-1.4-0.4l-4.1,0c0,0-0.3,0-0.5,0.1c-0.2,0.1-0.4,0.4-0.4,0.4s-0.7,1.7-1.5,3.1c-1.8,3-2.6,3.2-2.9,3c-0.7-0.4-0.5-1.7-0.5-2.7c0-2.9,0.5-4.1-0.9-4.4c-0.4-0.1-0.8-0.2-1.9-0.2c-1.5,0-2.7,0-3.4,0.3c-0.5,0.2-0.8,0.7-0.6,0.7c0.3,0,0.9,0.2,1.2,0.6c0.4,0.6,0.4,1.8,0.4,1.8s0.2,3.4-0.6,3.8c-0.6,0.3-1.3-0.3-2.9-3c-0.8-1.4-1.5-2.9-1.5-2.9s-0.1-0.3-0.3-0.4c-0.3-0.2-0.6-0.2-0.6-0.2l-3.9,0c0,0-0.6,0-0.8,0.3c-0.2,0.2,0,0.7,0,0.7s3.1,6.9,6.5,10.4C16.1,27.7,19.7,27.5,19.7,27.5L19.7,27.5z"/>
+    </symbol>
+    <symbol id="ok" viewBox="0 0 40 40">
+      <g>
+        <path d="M26.1,15c0,3.3-2.7,6.1-6.1,6.1c-3.3,0-6-2.7-6.1-6.1c0-3.3,2.7-6.1,6.1-6.1S26.1,11.7,26.1,15z M23.3,15c0-1.8-1.5-3.3-3.3-3.3s-3.3,1.5-3.3,3.3c0,1.8,1.5,3.3,3.3,3.3C21.8,18.3,23.3,16.8,23.3,15z"/>
+        <path d="M25.9,23.8c0.7-0.4,1-1.1,1-1.9c0-0.6-0.4-1.2-0.9-1.5c-0.6-0.3-1.3-0.2-1.8,0.2c-2.5,1.8-5.8,1.8-8.3,0c-0.5-0.4-1.2-0.5-1.8-0.2c-0.6,0.3-0.9,0.9-0.9,1.5c0,0.8,0.4,1.5,1,1.9c0.8,0.5,1.7,1,2.7,1.3c0.2,0,0.3,0.1,0.5,0.1l-2.8,2.7c-0.7,0.7-0.7,1.8,0,2.6c0.7,0.7,1.9,0.7,2.6,0c0,0,0,0,0,0l2.8-2.9l2.8,2.9c0.7,0.7,1.9,0.7,2.6,0c0.7-0.7,0.8-1.8,0-2.6c0,0,0,0,0,0l-2.8-2.7c0.2,0,0.3-0.1,0.5-0.1C24.1,24.8,25,24.4,25.9,23.8z"/>
+      </g>
+    </symbol>
+    <symbol id="yt" viewBox="0 0 40 40">
+      <path d="M12.4,12.4h15.3c1.8,0,3.3,1.5,3.3,3.3v8.7c0,1.8-1.5,3.3-3.3,3.3H12.4c-1.8,0-3.3-1.5-3.3-3.3v-8.7C9.1,13.8,10.6,12.4,12.4,12.4z M17.8,15.5v8.2l6.2-4.1L17.8,15.5z"/>
+    </symbol>
+    <symbol id="fb" viewBox="0 0 40 40">
+      <path d="M24.4,20h-2.9v10.4h-4.3V20h-2.1v-3.7h2.1v-2.4c0-1.7,0.8-4.4,4.4-4.4l3.2,0v3.6h-2.3c-0.4,0-0.9,0.2-0.9,1v2.2h3.2L24.4,20z"/>
+    </symbol>
+    <symbol id="inst" viewBox="0 0 40 40">
+      <g>
+        <path d="M29.5,13.5c0.2,0.6,0.4,1.4,0.5,2.4c0,1.1,0.1,1.4,0.1,4.1c0,2.7,0,3.1-0.1,4.1c0,1.1-0.2,1.8-0.5,2.4c-0.5,1.3-1.6,2.4-2.9,2.9c-0.6,0.2-1.4,0.4-2.4,0.5C23.1,30,22.7,30,20,30c-2.7,0-3.1,0-4.1-0.1c-1.1,0-1.8-0.2-2.4-0.5c-0.7-0.2-1.3-0.6-1.8-1.2c-0.5-0.5-0.9-1.1-1.2-1.8c-0.2-0.6-0.4-1.4-0.5-2.4c0-1.1-0.1-1.4-0.1-4.1c0-2.7,0-3.1,0.1-4.1c0-1.1,0.2-1.8,0.5-2.4c0.3-0.7,0.6-1.3,1.2-1.8c0.5-0.5,1.1-0.9,1.8-1.2c0.6-0.2,1.4-0.4,2.4-0.5c1.1,0,1.4-0.1,4.1-0.1c2.7,0,3.1,0,4.1,0.1c1.1,0,1.8,0.2,2.4,0.5c0.7,0.2,1.3,0.6,1.8,1.2C28.8,12.2,29.2,12.8,29.5,13.5z M27.8,25.9c0.1-0.4,0.3-0.9,0.3-1.9c0-1.1,0.1-1.4,0.1-4c0-2.7,0-3-0.1-4c0-1-0.2-1.5-0.3-1.9c-0.2-0.4-0.4-0.8-0.7-1.1c-0.3-0.3-0.7-0.6-1.1-0.7c-0.4-0.1-0.9-0.3-1.9-0.3c-1.1,0-1.4-0.1-4-0.1c-2.7,0-3,0-4,0.1c-1,0-1.5,0.2-1.9,0.3c-0.4,0.2-0.8,0.4-1.1,0.7c-0.3,0.3-0.6,0.7-0.8,1.1c-0.1,0.4-0.3,0.9-0.3,1.9c0,1.1-0.1,1.4-0.1,4c0,2.7,0,3,0.1,4c0,1,0.2,1.5,0.3,1.9c0.2,0.4,0.4,0.8,0.7,1.1c0.3,0.3,0.7,0.6,1.1,0.7c0.4,0.1,0.9,0.3,1.9,0.3c1.1,0,1.4,0.1,4,0.1c2.7,0,3,0,4-0.1c1,0,1.5-0.2,1.9-0.3C26.8,27.5,27.5,26.8,27.8,25.9z"/>
+        <path d="M14.9,20c0-2.8,2.3-5.1,5.1-5.1c2.8,0,5.1,2.3,5.1,5.1c0,2.8-2.3,5.1-5.1,5.1C17.2,25.1,14.9,22.8,14.9,20z M16.7,20c0,1.8,1.5,3.3,3.3,3.3c1.8,0,3.3-1.5,3.3-3.3c0-1.8-1.5-3.3-3.3-3.3C18.2,16.7,16.7,18.2,16.7,20z"/>
+        <path d="M26.5,14.7c0,0.7-0.5,1.2-1.2,1.2c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2C26,13.5,26.5,14,26.5,14.7L26.5,14.7z"/>
+      </g>
+    </symbol>
+    <symbol id="cart" viewBox="0 0 29 25">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39 7.82003L11.86 1.35003C12.1679 1.0269 12.6267 0.895923 13.0588 1.00781C13.4909 1.11969 13.8285 1.45688 13.9408 1.88884C14.0532 2.32081 13.9228 2.77975 13.6 3.08803L8.87 7.82003H5.39ZM20.07 7.82003H23.54L17.08 1.35003C16.5969 0.888643 15.8339 0.89719 15.3612 1.36928C14.8886 1.84138 14.8792 2.60441 15.34 3.08803L20.07 7.82003ZM0 9.55203V12.361H0.78C1.42272 12.3611 2.00903 12.728 2.29 13.306L7.54 24.038H21.42L26.65 13.308C26.9308 12.7295 27.517 12.3619 28.16 12.361H28.93V9.55203H0Z"/>
+    </symbol>
+    <symbol id="burger" viewBox="0 0 30 25">
+      <rect y="0.25" width="30" height="3"/>
+      <rect y="10.75" width="30" height="3"/>
+      <rect y="21.25" width="30" height="3"/>
+    </symbol>
+    <symbol id="close" viewBox="0 0 16 16">
+      <rect x="0.443359" y="14.1422" width="20" height="2" transform="rotate(-45 0.443359 14.1422)"/>
+      <rect x="1.85742" width="20" height="2" transform="rotate(45 1.85742 0)"/>
+    </symbol>
+    <symbol id="subscribe_arrow" viewBox="0 0 32 18">
+      <path d="M22.9766 17.2143C22.6766 17.2143 22.4766 17.1143 22.2766 16.9143C21.8766 16.5143 21.8766 15.9143 22.2766 15.5143L28.9766 8.91426L22.2766 2.31426C21.8766 1.91426 21.8766 1.31426 22.2766 0.914258C22.6766 0.514258 23.2766 0.514258 23.6766 0.914258L31.0766 8.21426C31.2766 8.41426 31.3766 8.61426 31.3766 8.91426C31.3766 9.21426 31.2766 9.41426 31.0766 9.61426L23.6766 16.9143C23.4766 17.1143 23.2766 17.2143 22.9766 17.2143Z"/>
+      <path d="M30.3758 9.91406H1.67578C1.07578 9.91406 0.675781 9.51406 0.675781 8.91406C0.675781 8.31406 1.07578 7.91406 1.67578 7.91406H30.3758C30.9758 7.91406 31.3758 8.31406 31.3758 8.91406C31.3758 9.51406 30.9758 9.91406 30.3758 9.91406Z"/>
+    </symbol>
+    <symbol id="arrow_right" viewBox="0 0 17 28">
+      <polygon points="1.5,27.6 0.2,26.1 13.4,14 0.2,1.9 1.5,0.4 16.3,14 "/>
+    </symbol>
+  </svg>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo" href="main.html"><img src="images/logo.png" alt="Oneshop"></a>
+        <div class="header__menu-block">
+          <div class="header__menus">
+            <nav class="main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item"><a class="main-menu__link" href="ways.html">Направления</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="about.html">О магазине</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Маркетинг</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Клиентам</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">Контакты</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Партнерам</a></li>
+              </ul>
+            </nav>
+            <ul class="service-menu">
+              <li class="service-menu__item"><a class="service-menu__link" href="#">Написать нам</a></li>
+              <li class="service-menu__item"><a class="service-menu__link" href="#">Тех. поддержка</a></li>
+            </ul>
+            <div class="header__socials">
+              <a class="header__social social" href="#" title="vk.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#vk" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="ok.ru" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#ok" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="youtube.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#yt" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="facebook.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#fb" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="instagram.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#inst" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__links">
+            <div class="header__user-links">
+              <a class="header__user-link user-link" href="#">
+                <span class="user-link__icon-block user-link__icon-block--enter"></span>
+                <span class="user-link__text">Вход</span>
+              </a>
+              <span class="header__user-links-separate"></span>
+              <a class="header__user-link user-link" href="#">
+                <span class="user-link__icon-block">
+                  <svg class="user-link__icon" aria-hidden="true">
+                    <use xlink:href="#cart" />
+                  </svg>
+                </span>
+                <span class="user-link__text">Корзина</span>
+              </a>
+              <button class="js-menu-toggler menu-toggler" type="button">
+                <svg class="menu-toggler__burger" aria-hidden="true">
+                  <use xlink:href="#burger" />
+                </svg>
+                <svg class="menu-toggler__close" aria-hidden="true">
+                  <use xlink:href="#close" />
+                </svg>
+              </button>
+            </div>
+            <div class="header__socials">
+              <a class="header__social social" href="#" title="vk.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#vk" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="ok.ru" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#ok" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="youtube.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#yt" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="facebook.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#fb" />
+                </svg>
+              </a>
+              <a class="header__social social" href="#" title="instagram.com" target="_blank">
+                <svg class="social__icon" aria-hidden="true">
+                  <use xlink:href="#inst" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">О магазине</li>
+        </ul>
+        <div class="page-columns">
+          <div class="page-columns__left">
+
+          </div>
+          <div class="page-columns__right">
+            <div class="text-block">
+              <h1>О магазине</h1>
+              <p class="h3" style="font-weight: 400;"><em>Мы рады приветствовать вас на сайте нашей компании.</em></p>
+              <p>Компания ONE SHOP WORLD LTD зарегистрирована в Великобритании.<br> Дата регистрации ONE SHOP WORLD LTD: <b>8 февраля 2017 года</b>.</p>
+              <p>Регистрационный номер в регистре компаний Великобритании: SC556920.</p>
+              <p>Юридический адрес: 69 Brunswick Street, Edinburgh, United Kingdom, EH7 5HT.</p>
+              <p>Уставной акционерный капитал компании ONE SHOP WORLD LTD: 200 000 000 GBP.</p>
+            </div>
+            <div class="grey-block">
+              <ol>
+                <li>Создать сеть безопасных комфортных и полностью автономных коттеджных городков, обеспеченных качественными товарами, продвижение которых построено по принципам МЛМ.</li>
+                <li>Создать современную высокотехнологичную компанию для ведения бизнеса в системе МЛМ для новичков и профессионалов сетевого маркетинга, чтобы они могли строить свой бизнес быстро, просто, прибыльно и надежно.</li>
+                <li>Обеспечить сеть широким ассортиментом экологически чистых товаров на каждый день, которые позволяют получить пользу и удовольствие от их использования, а также построить на этих товарах растущий и надежный МЛМ бизнес.</li>
+              </ol>
+            </div>
+            <div class="text-block">
+              <h2>Стратегия компании:</h2>
+              <p>OneShop - это Единый Магазин; это больше, чем просто магазин, - это стиль и образ жизни, начинающийся с построения своей потребительской структуры в компании OneShop для того, чтобы создать себе пассивный источник дохода. По мере продвижения и развития новичка МЛМ системы внутри компании OneShop он становится настоящим профессионалом и формирует для себя надежный и растущий МЛМ бизнес. Постепенно он приобретает различные товары OneShop, включая покупку дома или квартиры, созданной по новейшим современных технологиям 3D-печати, обеспечивающим доступные цены.</p>
+              <p>Далее у него появляется возможность покупать всё необходимое для жизни - от услуг коммуникации, и вплоть до новейших автомобилей и топлива для их заправки.</p>
+              <p>Построение бизнеса на товарах ежедневного спроса, которые очень хорошо продаются по всему миру, позволят нашему партнеру МЛМ сети выстроить очень быстрорастущий и надежный МЛМ бизнес, доходы от которого выведут его на совершенно другой, более качественный уровень жизни.</p>
+              <p>В МЛМ сети One Shop World полностью отсутствует необходимость личных продаж, а все потребление основано на самых нужных, естественных товарах, которые покупаются регулярно и быстро заканчиваются. Простота бизнеса делает его доступным для любого трудолюбивого человека, а система обучения позволит освоить профессию МЛМ специалиста от простого к сложному и добиться в ней прекрасных результатов. Весь доход МЛМ партнера OneShop строится на рекомендациях. Никаких продаж нет.</p>
+              <p>В 2017 году Мечта начала воплощаться в реальность. Сингапурский хедж-фонд принял решение взять на себя финансирование основных затрат по реализации замыслов проекта OneShop. 200 000 000 GBP было выделено в качестве начального уставного капитала для заключения договоров с многочисленными поставщиками товаров, услуг и технологий стратегически важных для ассортимента One Shop World.</p>
+              <p>OneShop - это глобальный международный проект, даже на начальном этапе включающий в себя участников и партнёров из десятков стран. Стратегия основателей и инвесторов проекта OneShop состоит в создании нового многомиллионного рынка счастливых потребителей качественных товаров и услуг, использующих все преимущества Интернета, новейших финансовых инструментов и МЛМ системы продвижения.</p>
+              <blockquote class="fu-block">
+                <p>«Далее у него появляется возможность покупать всё необходимое для жизни - от услуг коммуникации, и вплоть до новейших автомобилей и топлива для их заправки».</p>
+              </blockquote>
+              <p class="fu-block-caption">Короткая подпись</p>
+              <p class="big-text">Особое внимание уделяется трем направлениям: робототехнике, современным финансовым инструментам и созданию сильной команды лидеров, строящих бизнес OneShop с использованием МЛМ технологии.</p>
+              <ul>
+                <li>Робототехника позволяет сокращать расходы, снижая конечную цену потребительских товаров и услуг до конкурентного минимума, и уменьшает риски, связанные с человеческим фактором.</li>
+                <li>Современные финансовые инструменты, такие как blockchain, электронные деньги и мобильный банк позволяют делать покупки быстро, надёжно и с минимальной ценой за транзакции, учитывающей налоговую оптимизацию.</li>
+                <li>Сильная команда лидеров строит сеть профессиональных специалистов, которые далее выстраивают многомиллионную сеть лояльных потребителей в разных странах мира за счет корпоративного духа OneShop и продукции ежедневного потребления высокого качества.</li>
+              </ul>
+            </div>
+            <figure class="image-block">
+              <p><img src="images/content/about/img_1.jpg" alt="alt"></p>
+              <div class="image-block__caption-block">
+                <figcaption class="image-block__caption">Подпись к фотографии 100% ширина</figcaption>
+                <div class="image-block__description">
+                  <p>Обеспечить сеть широким ассортиментом экологически чистых товаров на каждый день, которые позволяют получить пользу и удовольствие от их использования, а также построить на этих товарах растущий и надежный МЛМ бизнес.</p>
+                  <p><a class="serif" href="#"><em>Перейти по ссылке</em></a></p>
+                </div>
+              </div>
+            </figure>
+            <h2>Система начислений для создателя группы покупателей</h2>
+            <div class="table-container">
+              <table>
+          			<tr>
+          				<th>
+          					Нижестоящий уровень покупателей
+          				</th>
+          				<th>
+          					% начисляемый от покупок нижестоящего покупателя
+          				</th>
+          				<th>
+          					Сумма в рублях Вашего месячного дохода при расчетной закупке покупателем на 3 000 рублей в месяц
+          				</th>
+          				<th>
+          					Требования по квалификации для получения доходов с определенного уровня своей структуры
+          				</th>
+          				<th>
+          					Условие для получения квалификации за счет группового объема в рубля
+          				</th>
+          				<th>
+          					Обязательная месячная закупка для получения доходов за покупки с нижних уровней. В рублях.
+          				</th>
+          				<th>
+          					Количество активных групп
+          				</th>
+          				<th>
+          					Сумма активности в группе
+          				</th>
+          			</tr>
+          			<tr>
+          				<td class="filled">—</td>
+          				<td>—</td>
+          				<td>—</td>
+          				<td>
+          					<b>Новичок</b>
+          				</td>
+          				<td>
+          					Регистрация
+          				</td>
+          				<td>—
+          				</td>
+          				<td>—
+          				</td>
+          				<td>—
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">—
+          				</td>
+          				<td>—
+          				</td>
+          				<td>—
+          				</td>
+          				<td>
+          					<b>Покупатель</b>
+          				</td>
+          				<td>
+          					3 000
+          				</td>
+          				<td>—
+          				</td>
+          				<td>—
+          				</td>
+          				<td>—
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>1 Уровень</b>
+          				</td>
+          				<td>
+          					1
+          				</td>
+          				<td>
+          					30
+          				</td>
+          				<td>
+          					<b>Консультант</b>
+          				</td>
+          				<td>
+          					9 000
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					3
+          				</td>
+          				<td>
+          					3 000
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>2 Уровень</b>
+          				</td>
+          				<td>
+          					2
+          				</td>
+          				<td>
+          					60
+          				</td>
+          				<td>
+          					<b>Менеджер</b>
+          				</td>
+          				<td>
+          					27 000
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					3
+          				</td>
+          				<td>
+          					6 000
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>3 Уровень</b>
+          				</td>
+          				<td>
+          					3
+          				</td>
+          				<td>
+          					90
+          				</td>
+          				<td>
+          					<b>Ведущий специалист</b>
+          				</td>
+          				<td>
+          					54 000
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					3
+          				</td>
+          				<td>
+          					18 000
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>4 Уровень</b>
+          				</td>
+          				<td>
+          					4
+          				</td>
+          				<td>
+          					120
+          				</td>
+          				<td>
+          					<b>Вице директор</b>
+          				</td>
+          				<td>
+          					150 000
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					3
+          				</td>
+          				<td>
+          					30 000
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>5 Уровень</b>
+          				</td>
+          				<td>
+          					5
+          				</td>
+          				<td>
+          					150
+          				</td>
+          				<td>
+          					<b>Директор</b>
+          				</td>
+          				<td>
+          					300 000
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					3
+          				</td>
+          				<td>
+          					50 000
+          				</td>
+          			</tr>
+          			<tr>
+          				<td colspan="8" style="border: none">
+          					<h3>Только с учебных программ и товаров для бизнеса</h3>
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>6 Уровень</b>
+          				</td>
+          				<td>
+          					6
+          				</td>
+          				<td>
+          					180
+          				</td>
+          				<td>
+          					<b>Нет условий</b>
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>7 Уровень</b>
+          				</td>
+          				<td>
+          					7
+          				</td>
+          				<td>
+          					210
+          				</td>
+          				<td>
+          					<b>Нет условий</b>
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>есть
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>8 Уровень</b>
+          				</td>
+          				<td>
+          					8
+          				</td>
+          				<td>
+          					240
+          				</td>
+          				<td>
+          					<b>Нет условий</b>
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>9 Уровень</b>
+          				</td>
+          				<td>
+          					9
+          				</td>
+          				<td>
+          					270
+          				</td>
+          				<td>
+          					<b>Нет условий</b>
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          			</tr>
+          			<tr>
+          				<td class="filled">
+          					<b>10 Уровень</b>
+          				</td>
+          				<td>
+          					10
+          				</td>
+          				<td>
+          					300
+          				</td>
+          				<td>
+          					<b>Нет условий</b>
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					есть
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          				<td>
+          					Нет условий
+          				</td>
+          			</tr>
+          		</table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="subscribe">
+      <div class="container">
+        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+        <form class="subscribe__form" action="">
+          <input class="subscribe__input" type="text" name="subscribe" value="" placeholder="Введите ваш email…">
+          <button class="subscribe__submit" type="submit">
+            <svg class="subscribe__submit-icon" aria-hidden="true">
+              <use xlink:href="#subscribe_arrow" />
+            </svg>
+            <span class="subscribe__submit-text">Подписаться</span>
+          </button>
+        </form>
+        <p class="subscribe__note">Нажимая на кнопку "Подписаться", вы даёте своё согласие на обработку<br> <a href="#">персональных данных</a></p>
+      </div>
+    </div>
+    <div class="footer__inner container">
+      <div class="footer__left">
+        <p class="footer__copyright">© One Shop World Ltd. 2020</p>
+        <ul class="footer__links">
+          <li class="footer__links-item"><a class="footer__link" href="#">Условия обработки персональных данных</a></li>
+          <li class="footer__links-item"><a class="footer__link" href="#">Политика в отношении обработки персональных данных</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__contact">Email:<br> <a class="footer__contact-link" href="mailto:info@one-shopw.com">info@one-shopw.com</a></p>
+        <p class="footer__contact">Тех. поддержка:<br> <a class="footer__contact-link" href="mailto:texpomosh@one-shopw.com">texpomosh@one-shopw.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
