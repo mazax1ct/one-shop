@@ -279,9 +279,6 @@ img
     margin-bottom: 50px
     text-align: center
 
-    @media(min-width: 1600px)
-      margin-bottom: 80px
-
 .big-text
   font-size: 18px
   font-weight: 700
@@ -465,6 +462,7 @@ img
     display: flex
 
   @media(min-width: 1280px)
+    align-items: center
     margin-left: $margin-left-indent-1280
 
   @media(min-width: 1600px)
@@ -478,6 +476,17 @@ img
     @media(min-width: 1280px)
       padding-right: 35px
 
+    .image-block
+      margin: 0
+
+    .image-block__caption
+      padding-left: 0
+      padding-right: 0
+      width: 100%
+
+      &::after
+        left: 0
+
   &__text
     @media(min-width: 768px)
       padding-left: 12px
@@ -485,3 +494,260 @@ img
 
     @media(min-width: 1280px)
       padding-left: 35px
+
+.video-block
+  margin-top: 75px
+  margin-bottom: 75px
+
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+    margin-left: $margin-left-indent-768
+    padding-top: 60px
+    padding-bottom: 60px
+    position: relative
+
+  @media(min-width: 1280px)
+    margin-left: $margin-left-indent-1280
+    margin-right: $margin-right-indent-1280
+    padding-top: 100px
+    padding-bottom: 50px
+
+  @media(min-width: 1600px)
+    margin-left: $margin-left-indent-1600
+    margin-right: 0
+
+  &::after
+    @media(min-width: 768px)
+      background-color: #F1F3F5
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 79.42708%
+
+    @media(min-width: 1280px)
+      height: calc(100% - 100px)
+      top: 100px
+
+  &__text
+    background-color: #F1F3F5
+    padding: 20px 20px 35px
+
+    @media(min-width: 768px)
+      padding-right: 25px
+      padding-top: 0
+      padding-bottom: 0
+      position: relative
+      width: 46.37884%
+      z-index: 1
+
+    @media(min-width: 1280px)
+      padding-left: 75px
+      width: 32.24044%
+
+  &__video
+    @media(min-width: 768px)
+      padding-left: 25px
+      position: relative
+      width: 53.62116%
+      z-index: 1
+
+    @media(min-width: 1280px)
+      margin-top: -100px
+      width: 67.75956%
+
+  &__caption
+    font-size: 14px
+    font-weight: 600
+    font-style: italic
+    margin-top: 20px
+    position: relative
+    padding-bottom: 25px
+
+    &::after
+      background-color: #000
+      bottom: 0
+      content: ''
+      height: 1px
+      left: 0
+      position: absolute
+      top: auto
+      width: 215px
+      z-index: 1
+
+.video
+  display: inline-block
+  position: relative
+  vertical-align: top
+
+  &::after
+    background-color: rgba(#000,0.5)
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' opacity='0.8' d='M26,16L6,31.5v-31L26,16z'/%3E%3C/svg%3E")
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 20px auto
+    border-radius: 50%
+    content: ''
+    height: 35px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 35px
+    z-index: 1
+
+    @media(min-width: 768px)
+      height: 64px
+      width: 64px
+
+    @media(min-width: 1600px)
+      background-size: 32px auto
+      height: 70px
+      width: 70px
+
+.fu-block4
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+    justify-content: space-between
+    margin-top: 70px
+    margin-bottom: 70px
+
+  &__text
+    @media(min-width: 768px)
+      max-width: 705px
+      padding-right: 25px
+
+  &__link-block
+    margin-top: 70px
+    margin-bottom: 70px
+
+    @media(min-width: 768px)
+      margin: 0
+
+.download-link
+  display: block
+  margin-left: auto
+  margin-right: auto
+  min-width: 250px
+  text-decoration: none
+  width: 250px
+
+  &:hover
+    .download-link__icon
+      fill: $main-color
+
+  &__title
+    color: #376006
+    display: block
+    font-family: $secondary-font
+    font-style: italic
+    margin-bottom: 20px
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 18px
+
+  &__icon-block
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+    &::before,
+    &::after
+      background-color: #000
+      content: ''
+      display: block
+      height: 1px
+      width: 80px
+
+  &__icon
+    fill: #000
+    height: 34px
+    transition: fill 0.3s
+    width: 34px
+
+.single-image
+  margin-left: 0
+  margin-right: 0
+  margin-top: 50px
+  margin-bottom: 50px
+
+  &__caption
+    font-size: 14px
+    font-weight: 600
+    font-style: italic
+    margin-bottom: 25px
+    position: relative
+    padding-bottom: 25px
+
+    &::after
+      background-color: #000
+      bottom: 0
+      content: ''
+      height: 1px
+      left: 0
+      position: absolute
+      top: auto
+      width: 215px
+      z-index: 1
+
+.images-tile
+  margin-top: 40px
+  margin-bottom: 40px
+
+  @media(min-width: 1280px)
+    margin-left: $margin-left-indent-1280
+
+  @media(min-width: 1600px)
+    margin-left: $margin-left-indent-1600
+
+  &__list
+    @media(min-width: 768px)
+      align-items: flex-end
+      display: flex
+      margin-left: -25px
+      margin-right: -25px
+
+    @media(min-width: 1280px)
+      margin-left: -37px
+      margin-right: -37px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__item
+    margin-bottom: 40px
+
+    &:first-child
+      padding-right: 70px
+
+      @media(min-width: 768px)
+        padding-right: 25px
+        padding-bottom: 74px
+
+      @media(min-width: 1280px)
+        padding-right: 37px
+
+    &:last-child
+      margin-bottom: 0
+      padding-right: 70px
+
+      @media(min-width: 768px)
+        padding-right: 25px
+        padding-bottom: 44px
+
+      @media(min-width: 1280px)
+        padding-right: 37px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-left: 25px
+      padding-right: 25px
+      width: 33.33333%
+
+    @media(min-width: 1280px)
+      padding-left: 37px
+      padding-right: 37px
