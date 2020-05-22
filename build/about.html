@@ -78,6 +78,12 @@
     		<rect x="9" y="19.6" width="10.7" height="1"/>
     	</g>
     </symbol>
+    <symbol id="slider_arrow_left" viewBox="0 0 12 22">
+      <polygon points="10.1,0.8 11.6,2.2 3.2,11 11.6,19.8 10.1,21.2 0.4,11 "/>
+    </symbol>
+    <symbol id="slider_arrow_right" viewBox="0 0 12 22">
+      <polygon points="1.9,21.2 0.4,19.8 8.8,11 0.4,2.2 1.9,0.8 11.6,11 "/>
+    </symbol>
   </svg>
 
   <div class="wrapper">
@@ -586,6 +592,10 @@
               <p>Как быть счастливым, материально обеспеченным человеком во времена, когда экономика многих стран испытывает кризис, когда робототехника вытесняет рабочие места? Для ответа на этот вопрос компания OneShop с самых первых дней своего запуска создала Академию(Академию OneShop). Основная задача Академии - обучать профессии 21-го века, которую не смогут заменить роботы. В планах компании OneShop создать до миллиона новых высокооплачиваемых рабочих мест для людей, которые в последствии захотят жить счастливой жизнью в автономных городках, построенных по новейшим технологиям.</p>
             </div>
             <div class="slider-block">
+              <div class="slider-block__top">
+                <p class="slider-block__title">Слайдер с фотографиями</p>
+                <p class="js-slider-count slider-block__counter"></p>
+              </div>
               <div class="js-slider slider">
                 <div class="slider__item">
                   <a href="images/content/about/img_3.jpg" data-fancybox="slider"><img src="images/content/about/img_3.jpg" alt="alt"></a>
@@ -614,7 +624,14 @@
                 <div class="slider__item">
                   <a href="images/content/about/img_3.jpg" data-fancybox="slider"><img src="images/content/about/img_3.jpg" alt="alt"></a>
                 </div>
+                <div class="slider__item">
+                  <a href="images/content/about/img_3.jpg" data-fancybox="slider"><img src="images/content/about/img_3.jpg" alt="alt"></a>
+                </div>
+                <div class="slider__item">
+                  <a href="images/content/about/img_3.jpg" data-fancybox="slider"><img src="images/content/about/img_3.jpg" alt="alt"></a>
+                </div>
               </div>
+              <div class="js-slider-nav slider-block__arrows"></div>
             </div>
             <div class="text-block">
               <p>В МЛМ сети One Shop World полностью отсутствует необходимость личных продаж, а все потребление основано на самых нужных, естественных товарах, которые покупаются регулярно и быстро заканчиваются. Простота бизнеса делает его доступным для любого трудолюбивого человека, а система обучения позволит освоить профессию МЛМ специалиста от простого к сложному и добиться в ней прекрасных результатов. Весь доход МЛМ партнера OneShop строится на рекомендациях. Никаких продаж нет.</p>
@@ -716,6 +733,7 @@
   <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>
   <script type="text/javascript" src="js/simplebar.min.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
