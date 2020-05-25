@@ -97,8 +97,8 @@
               <ul class="main-menu__list">
                 <li class="main-menu__item"><a class="main-menu__link" href="ways.html">Направления</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="about.html">О магазине</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Маркетинг</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Клиентам</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="marketing.html">Маркетинг</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="for-clients.html">Клиентам</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">Контакты</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Партнерам</a></li>
               </ul>
@@ -199,18 +199,27 @@
         </ul>
         <div class="page-columns">
           <div class="page-columns__left">
-
+            <div class="js-sticky-block">
+              <div class="js-selectbox selectbox">
+                <div class="selectbox__value">О магазине</div>
+                <ul id="float-nav" class="float-nav selectbox__list">
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="about.html">О магазине</a></li>
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="management.html">Руководство компании</a></li>
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="docs.html">Учредительные документы</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="page-columns__right">
+          <div class="js-content-with-sticky page-columns__right">
             <div class="text-block">
-              <h1>О магазине</h1>
+              <h1 id="1">О магазине</h1>
               <p class="h3" style="font-weight: 400;"><em>Мы рады приветствовать вас на сайте нашей компании.</em></p>
               <p>Компания ONE SHOP WORLD LTD зарегистрирована в Великобритании.<br> Дата регистрации ONE SHOP WORLD LTD: <b>8&nbsp;февраля&nbsp;2017&nbsp;года</b>.</p>
               <p>Регистрационный номер в регистре компаний Великобритании: SC556920.</p>
               <p>Юридический адрес: 69 Brunswick Street, Edinburgh, United Kingdom, EH7 5HT.</p>
               <p>Уставной акционерный капитал компании ONE SHOP WORLD LTD: 200 000 000 GBP.</p>
             </div>
-            <div class="grey-block">
+            <div class="grey-block grey-block--type_2">
               <ol>
                 <li>Создать сеть безопасных комфортных и полностью автономных коттеджных городков, обеспеченных качественными товарами, продвижение которых построено по принципам МЛМ.</li>
                 <li>Создать современную высокотехнологичную компанию для ведения бизнеса в системе МЛМ для новичков и профессионалов сетевого маркетинга, чтобы они могли строить свой бизнес быстро, просто, прибыльно и надежно.</li>
@@ -246,201 +255,88 @@
                 </div>
               </div>
             </figure>
-            <h2>Система начислений для создателя группы покупателей</h2>
+            <h2 id="2">Система начислений для создателя группы покупателей</h2>
             <div class="js-custom-scroll table-container">
               <table>
           			<tr>
-          				<th>
-          					Нижестоящий уровень покупателей
-          				</th>
-          				<th>
-          					% начисляемый от покупок нижестоящего покупателя
-          				</th>
-          				<th>
-          					Сумма в рублях Вашего месячного дохода при расчетной закупке покупателем на 3 000 рублей в месяц
-          				</th>
-          				<th>
-          					Требования по квалификации для получения доходов с определенного уровня своей структуры
-          				</th>
-          				<th>
-          					Условие для получения квалификации за счет группового объема в рубля
-          				</th>
-          				<th>
-          					Обязательная месячная закупка для получения доходов за покупки с нижних уровней. В рублях.
-          				</th>
-          				<th>
-          					Количество активных групп
-          				</th>
-          				<th>
-          					Сумма активности в группе
-          				</th>
+          				<th>Нижестоящий уровень покупателей</th>
+          				<th>% начисляемый от покупок нижестоящего покупателя</th>
+          				<th>Сумма в рублях Вашего месячного дохода при расчетной закупке покупателем на 3 000 рублей в месяц</th>
+          				<th>Требования по квалификации для получения доходов с определенного уровня своей структуры</th>
+          				<th>Условие для получения квалификации за счет группового объема в рубля</th>
+          				<th>Обязательная месячная закупка для получения доходов за покупки с нижних уровней. В рублях.</th>
+          				<th>Количество активных групп</th>
+          				<th>Сумма активности в группе</th>
           			</tr>
           			<tr>
           				<td class="filled">—</td>
           				<td>—</td>
           				<td>—</td>
-          				<td>
-          					<b>Новичок</b>
-          				</td>
-          				<td>
-          					Регистрация
-          				</td>
-          				<td>—
-          				</td>
-          				<td>—
-          				</td>
-          				<td>—
-          				</td>
+          				<td><b>Новичок</b></td>
+          				<td>Регистрация</td>
+          				<td>—</td>
+          				<td>—</td>
+          				<td>—</td>
           			</tr>
           			<tr>
-          				<td class="filled">—
-          				</td>
-          				<td>—
-          				</td>
-          				<td>—
-          				</td>
-          				<td>
-          					<b>Покупатель</b>
-          				</td>
-          				<td>
-          					3 000
-          				</td>
-          				<td>—
-          				</td>
-          				<td>—
-          				</td>
-          				<td>—
-          				</td>
+          				<td class="filled">—</td>
+          				<td>—</td>
+          				<td>—</td>
+          				<td><b>Покупатель</b></td>
+          				<td>3 000</td>
+          				<td>—</td>
+          				<td>—</td>
+          				<td>—</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>1 Уровень</b>
-          				</td>
-          				<td>
-          					1
-          				</td>
-          				<td>
-          					30
-          				</td>
-          				<td>
-          					<b>Консультант</b>
-          				</td>
-          				<td>
-          					9 000
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					3
-          				</td>
-          				<td>
-          					3 000
-          				</td>
+          				<td class="filled"><b>1 Уровень</b></td>
+          				<td>1</td>
+          				<td>30</td>
+          				<td><b>Консультант</b></td>
+          				<td>9 000</td>
+          				<td>есть</td>
+          				<td>3</td>
+          				<td>3 000</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>2 Уровень</b>
-          				</td>
-          				<td>
-          					2
-          				</td>
-          				<td>
-          					60
-          				</td>
-          				<td>
-          					<b>Менеджер</b>
-          				</td>
-          				<td>
-          					27 000
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					3
-          				</td>
-          				<td>
-          					6 000
-          				</td>
+          				<td class="filled"><b>2 Уровень</b></td>
+          				<td>2</td>
+          				<td>60</td>
+          				<td><b>Менеджер</b></td>
+          				<td>27 000</td>
+          				<td>есть</td>
+          				<td>3</td>
+          				<td>6 000</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>3 Уровень</b>
-          				</td>
-          				<td>
-          					3
-          				</td>
-          				<td>
-          					90
-          				</td>
-          				<td>
-          					<b>Ведущий специалист</b>
-          				</td>
-          				<td>
-          					54 000
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					3
-          				</td>
-          				<td>
-          					18 000
-          				</td>
+          				<td class="filled"><b>3 Уровень</b></td>
+          				<td>3</td>
+          				<td>90</td>
+          				<td><b>Ведущий специалист</b></td>
+          				<td>54 000</td>
+          				<td>есть</td>
+          				<td>3</td>
+          				<td>18 000</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>4 Уровень</b>
-          				</td>
-          				<td>
-          					4
-          				</td>
-          				<td>
-          					120
-          				</td>
-          				<td>
-          					<b>Вице директор</b>
-          				</td>
-          				<td>
-          					150 000
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					3
-          				</td>
-          				<td>
-          					30 000
-          				</td>
+          				<td class="filled"><b>4 Уровень</b></td>
+          				<td>4</td>
+          				<td>120</td>
+          				<td><b>Вице директор</b></td>
+          				<td>150 000</td>
+          				<td>есть</td>
+          				<td>3</td>
+          				<td>30 000</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>5 Уровень</b>
-          				</td>
-          				<td>
-          					5
-          				</td>
-          				<td>
-          					150
-          				</td>
-          				<td>
-          					<b>Директор</b>
-          				</td>
-          				<td>
-          					300 000
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					3
-          				</td>
-          				<td>
-          					50 000
-          				</td>
+          				<td class="filled"><b>5 Уровень</b></td>
+          				<td>5</td>
+          				<td>150</td>
+          				<td><b>Директор</b></td>
+          				<td>300 000</td>
+          				<td>есть</td>
+          				<td>3</td>
+          				<td>50 000</td>
           			</tr>
           			<tr>
           				<td colspan="8" style="border: none">
@@ -448,133 +344,54 @@
           				</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>6 Уровень</b>
-          				</td>
-          				<td>
-          					6
-          				</td>
-          				<td>
-          					180
-          				</td>
-          				<td>
-          					<b>Нет условий</b>
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
+          				<td class="filled"><b>6 Уровень</b></td>
+          				<td>6</td>
+          				<td>180</td>
+          				<td><b>Нет условий</b></td>
+          				<td>Нет условий</td>
+          				<td>есть</td>
+          				<td>Нет условий</td>
+          				<td>Нет условий</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>7 Уровень</b>
-          				</td>
-          				<td>
-          					7
-          				</td>
-          				<td>
-          					210
-          				</td>
-          				<td>
-          					<b>Нет условий</b>
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>есть
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
+          				<td class="filled"><b>7 Уровень</b></td>
+          				<td>7</td>
+          				<td>210</td>
+          				<td><b>Нет условий</b></td>
+          				<td>Нет условий</td>
+          				<td>есть</td>
+          				<td>Нет условий</td>
+          				<td>Нет условий</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>8 Уровень</b>
-          				</td>
-          				<td>
-          					8
-          				</td>
-          				<td>
-          					240
-          				</td>
-          				<td>
-          					<b>Нет условий</b>
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
+          				<td class="filled"><b>8 Уровень</b></td>
+          				<td>8</td>
+          				<td>240</td>
+          				<td><b>Нет условий</b></td>
+          				<td>Нет условий</td>
+          				<td>есть</td>
+          				<td>Нет условий</td>
+          				<td>Нет условий</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>9 Уровень</b>
-          				</td>
-          				<td>
-          					9
-          				</td>
-          				<td>
-          					270
-          				</td>
-          				<td>
-          					<b>Нет условий</b>
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
+          				<td class="filled"><b>9 Уровень</b></td>
+          				<td>9</td>
+          				<td>270</td>
+          				<td><b>Нет условий</b></td>
+          				<td>Нет условий</td>
+          				<td>есть</td>
+          				<td>Нет условий</td>
+          				<td>Нет условий</td>
           			</tr>
           			<tr>
-          				<td class="filled">
-          					<b>10 Уровень</b>
-          				</td>
-          				<td>
-          					10
-          				</td>
-          				<td>
-          					300
-          				</td>
-          				<td>
-          					<b>Нет условий</b>
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					есть
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
-          				<td>
-          					Нет условий
-          				</td>
+          				<td class="filled"><b>10 Уровень</b></td>
+          				<td>10</td>
+          				<td>300</td>
+          				<td><b>Нет условий</b></td>
+          				<td>Нет условий</td>
+          				<td>есть</td>
+          				<td>Нет условий</td>
+          				<td>Нет условий</td>
           			</tr>
           		</table>
             </div>
@@ -675,7 +492,7 @@
                 </a>
               </div>
             </div>
-            <h2>Схема 2 / диаграмма 1</h2>
+            <h2 id="3">Схема 2 / диаграмма 1</h2>
             <figure class="single-image">
               <p style="max-width: 830px"><img src="images/content/about/img_9.png" alt="alt"></p>
               <figcaption class="single-image__caption">Подпись</figcaption>
@@ -735,6 +552,20 @@
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/ddscrollspy.js"></script>
+  <script src="js/select-menu.js"></script>
+  <script>
+    $(document).ready(function () {
+      //превращаем меню в селект
+      if ($(".js-selectbox").length) {
+        if ($("body").width() < 1280) {
+          $('.js-selectbox').selectbox();
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

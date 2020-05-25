@@ -21,7 +21,6 @@ $(document).ready(function () {
   if ($('.js-slider').length) {
     $('.js-slider').each(function (index, value) {
 
-
       var slickElement = $(this);
 
       var status = slickElement.parent().find('.js-slider-count');
@@ -56,6 +55,32 @@ $(document).ready(function () {
       });
     });
   }
+
+  //запуск плавающего левого меню в разделе доставки
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 1280) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 170
+        });
+
+        //навигация по якорям
+        if ($(".js-scroll-spy").length) {
+          $(".js-scroll-spy").ddscrollSpy({
+            scrolltopoffset: -170
+          });
+        }
+      }, 100);
+    }
+
+    //если блок для контента пустой, открепляем плавающее левое меню
+    if ($(".js-content-with-sticky").length) {
+      if ($('.js-content-with-sticky').html().trim() === '') {
+        $(".js-sticky-block").trigger("sticky_kit:detach");
+      }
+    }
+  }
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -75,4 +100,46 @@ $(document).on('click', '.js-menu-toggler', function () {
     bodyScrollLock.enableBodyScroll(targetElement);
   }
   return false;
+});
+
+//открепляем и перезапускаем прилипающий блок при резайзе
+$(window).resize(function() {
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 1280) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 170
+        });
+
+        //навигация по якорям в новости
+        if ($(".js-scroll-spy").length) {
+          $(".js-scroll-spy").ddscrollSpy({
+            scrolltopoffset: -170
+          });
+        }
+      }, 100);
+    }
+  }
+});
+
+//открепляем и перезапускаем прилипающий блок при повороте устройства
+$(window).on("orientationchange", function(event) {
+  if ($(".js-sticky-block").length) {
+    if ($("body").width() >= 1280) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 170
+        });
+
+        //навигация по якорям в новости
+        if ($(".js-scroll-spy").length) {
+          $(".js-scroll-spy").ddscrollSpy({
+            scrolltopoffset: -170
+          });
+        }
+      }, 100);
+    }
+  }
 });

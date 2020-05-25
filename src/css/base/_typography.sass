@@ -52,11 +52,16 @@ h3,.h3
   font-size: 18px
   line-height: 24px
   margin-bottom: 24px
+  margin-top: 24px
 
   @media(min-width: 768px)
     font-size: 24px
     line-height: 32px
     margin-bottom: 40px
+    margin-top: 40px
+
+  &:first-child
+    margin-top: 0
 
 h4,.h4,
 h5,.h5
@@ -74,11 +79,12 @@ h5,.h5
     margin-bottom: 30px
 
 p,
-ul,
-ol,
 table
   margin-top: 0
   margin-bottom: 20px
+
+  @media(min-width: 1280px)
+    margin-bottom: 24px
 
   &:last-child
     margin-bottom: 0
@@ -86,17 +92,27 @@ table
 ul,
 ol
   list-style: none
+  margin: 0
   padding: 0
 
 ul
   &:not([class])
+    margin-top: 40px
+    margin-bottom: 40px
+
     @media(min-width: 768px)
       padding-left: 45px
+
+    &:last-child
+      margin-bottom: 0
 
     li
       margin-bottom: 25px
       padding-left: 27px
       position: relative
+
+      &:last-child
+        margin-bottom: 0
 
       &::before
         background-color: $text-color
@@ -110,6 +126,9 @@ ul
         z-index: 1
 
 ol
+  margin-top: 40px
+  margin-bottom: 40px
+
   &:not([class])
     counter-reset: myCounter
     font-size: 15px
@@ -143,15 +162,28 @@ ol
     margin-bottom: 60px
 
   @media(min-width: 1280px)
-    margin-right: $margin-right-indent-1280
-    margin-left: $margin-left-indent-1280
-
-  @media(min-width: 1600px)
-    margin-right: $margin-right-indent-1600
-    margin-left: $margin-left-indent-1600
-
-  @media(min-width: 1920px)
     margin-right: 0
+
+.page-columns__right
+  .table-container
+    margin-bottom: 30px
+    margin-right: $margin-right-indent
+    overflow-x: auto
+
+    @media(min-width: 768px)
+      margin-right: $margin-right-indent-768
+      margin-bottom: 60px
+
+    @media(min-width: 1280px)
+      margin-right: $margin-right-indent-1280
+      margin-left: $margin-left-indent-1280
+
+    @media(min-width: 1600px)
+      margin-right: $margin-right-indent-1600
+      margin-left: $margin-left-indent-1600
+
+    @media(min-width: 1920px)
+      margin-right: 0
 
 table
   border-collapse: collapse
@@ -185,6 +217,18 @@ img
   max-width: 100%
   vertical-align: top
 
+hr
+  color: #D1D1D1
+  background-color: #D1D1D1
+  border: 0px none
+  height: 1px
+  margin-top: 25px
+  margin-bottom: 25px
+
+  @media(min-width: 768px)
+    margin-top: 40px
+    margin-bottom: 40px
+
 .serif
   font-family: $secondary-font
 
@@ -215,14 +259,21 @@ img
     margin-right: $margin-right-indent-1280
     margin-bottom: 60px
     margin-top: 60px
-    padding-right: 100px
-    padding-left: 150px
+    padding-right: 90px
+    padding-left: 90px
 
   @media(min-width: 1600px)
     margin-left: $margin-left-indent-1600
     margin-right: 0
-    padding-right: 100px
-    padding-left: 160px
+
+  &--type_2
+    @media(min-width: 1280px)
+      padding-right: 100px
+      padding-left: 150px
+
+    @media(min-width: 1600px)
+      padding-right: 100px
+      padding-left: 160px
 
   &:last-child
     margin-bottom: 0
@@ -751,3 +802,46 @@ img
     @media(min-width: 1280px)
       padding-left: 37px
       padding-right: 37px
+
+.image-block2
+  margin-top: 30px
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    display: flex
+    margin-top: 60px
+    margin-bottom: 60px
+
+  @media(min-width: 1280px)
+    margin-left: $margin-left-indent-1280
+    position: relative
+
+  @media(min-width: 1600px)
+    margin-left: $margin-left-indent-1600
+
+  &__main
+    @media(min-width: 1280px)
+      max-width: 920px
+
+  &__second
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+      min-width: 21%
+      padding-right: 25px
+      width: 21%
+
+    @media(min-width: 1280px)
+      left: -26.2%
+      min-width: 200px
+      position: absolute
+      padding-right: 0
+      top: 0
+      width: 200px
+
+    @media(min-width: 1600px)
+      left: -28.8%
+
+    @media(min-width: 1900px)
+      left: -29.6%
