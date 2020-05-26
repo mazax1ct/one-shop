@@ -311,7 +311,7 @@ hr
 
   &::before,
   &::after
-    background-color: $text-color
+    background-color: #335A00
     content: ''
     height: 90px
     left: 50%
@@ -331,12 +331,14 @@ hr
     text-align: center
 
 .big-text
-  font-size: 18px
+  font-size: 14px
   font-weight: 700
-  line-height: 25px
+  line-height: 20px
   margin-bottom: 24px
 
   @media(min-width: 768px)
+    font-size: 18px
+    line-height: 25px
     margin-bottom: 40px
 
 .image-block
@@ -845,3 +847,46 @@ hr
 
     @media(min-width: 1900px)
       left: -29.6%
+
+.example-title
+  border-bottom: 1px solid #212121
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='24' viewBox='0 0 21 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.000453949 17.945L14.1605 12.041L0.000453949 6.13695V0.376953L20.0645 9.06495V15.065L0.000453949 23.705V17.945Z' fill='%23335A00'/%3E%3C/svg%3E%0A")
+  background-repeat: no-repeat
+  background-position: 0 0
+  color: #335A00
+  font-size: 14px
+  font-weight: 700
+  line-height: 17px
+  padding-left: 40px
+  padding-top: 3px
+  padding-bottom: 20px
+
+  @media(min-width: 768px)
+    font-size: 24px
+    margin-bottom: 35px
+
+.fu-block5
+  @media(min-width: 768px)
+    display: flex
+
+  &__item
+    &:not(:last-child)
+      margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 50%
+
+    &:first-child
+      @media(min-width: 768px)
+        padding-right: 25px
+
+      @media(min-width: 128px)
+        padding-right: 50px
+
+    &:last-child
+      @media(min-width: 768px)
+        padding-left: 25px
+
+      @media(min-width: 1280px)
+        padding-left: 50px
