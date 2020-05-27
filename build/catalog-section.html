@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>One-shop - Руководство компании</title>
+  <title>One-shop - Каталог</title>
 
   <meta name="description" content="">
 
@@ -243,65 +243,191 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
-          <li class="breadcrumbs__item">Руководство компании</li>
+          <li class="breadcrumbs__item">Каталог</li>
         </ul>
         <div class="page-columns">
           <div class="page-columns__left">
             <div class="js-sticky-block">
               <div class="js-selectbox selectbox">
-                <div class="selectbox__value">Руководство компании</div>
+                <div class="selectbox__value">Все товары</div>
                 <ul id="float-nav" class="float-nav selectbox__list">
-                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="about.html">О магазине</a></li>
-                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="management.html">Руководство компании</a></li>
-                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="docs.html">Учредительные документы</a></li>
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="#">Все товары</a></li>
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Информационные продукты</a></li>
+                  <li class="float-nav__item selectbox__item">
+                    <a class="float-nav__link selectbox__link" href="#">Продуктовые наборы</a>
+                    <ul class="sub-menu">
+                      <li><a class="selected" href="#">Директорская школа</a></li>
+                      <li><a href="#">Офисные наборы</a></li>
+                      <li><a href="#">Уровни доступа СиРБиО</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="js-content-with-sticky page-columns__right">
-            <h1>Руководство компании</h1>
-            <div class="manager-block">
-              <div class="manager-block__image-block">
-                <div class="manager-block__image"><img src="images/content/management/img_1.jpg" alt=""></div>
-                <p class="manager-block__caption">Солошенко Владимир Сергеевич</p>
+            <h1>Каталог</h1>
+            <div class="catalog-filter">
+              <ol class="pager">
+                <li class="pager__item">
+                  <a class="pager__link disabled" title="Назад">
+                    <svg class="pager__icon" aria-hidden="true">
+                      <use xlink:href="#prev_arrow" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="pager__item"><a class="pager__link is-active" href="#">1</a></li>
+                <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+                <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+                <li class="pager__item">
+                  <a class="pager__link" href="#" title="Вперёд">
+                    <svg class="pager__icon" aria-hidden="true">
+                      <use xlink:href="#next_arrow" />
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+              <div class="catalog-view-block">
+                Вид
+                <button class="js-catalog-view catalog-view is-active" type="button" title="Плитка" data-target="catalog-list--type_1">
+                  <svg class="catalog-view__icon" aria-hidden="true">
+                    <use xlink:href="#catalog_view_1" />
+                  </svg>
+                </button>
+                <button class="js-catalog-view catalog-view" type="button" title="Таблица" data-target="catalog-list--type_2">
+                  <svg class="catalog-view__icon" aria-hidden="true">
+                    <use xlink:href="#catalog_view_2" />
+                  </svg>
+                </button>
+                <button class="js-catalog-view catalog-view" type="button" title="Компактный" data-target="catalog-list--type_3">
+                  <svg class="catalog-view__icon" aria-hidden="true">
+                    <use xlink:href="#catalog_view_3" />
+                  </svg>
+                </button>
               </div>
-              <div class="manager-block__text-block">
-                <p class="manager-title"><em>Вице-президент One Shop World</em></p>
-                <p><b>Солошенко Владимир Сергеевич</b> (год рождения 1970, гражданин России, живёт и работает в Санкт-Петербурге).</p>
-                <p>Солошенко Владимир Сергеевич родился в России, в г. Балахна Нижегородской области. С 14 лет начал заниматься предпринимательской деятельность по изготовлению кондитерских изделий.</p>
-                <p>В 16 лет открыл небольшой кондитерский цех по производству фигурных изделий.</p>
-                <p>В 19 лет закончил техникум атомной энергетики по специальности механик.</p>
-                <p>В 1989 году был призван на срочную военную службу.</p>
-                <p>В период с 1991 по 1994 года с нуля самостоятельно создал кондитерскую фабрику "Сласко" численностью 230 работающих и параллельно проходил обучение в Университете Тихоокеанского Побережья по специальности Менеджмент в г Москва.</p>
-                <p>В 1994 и 1995 году проходил обучение в США в консалтинговой компании MTI в г. Лос-Анджелес.</p>
-                <p>В 1995 году продал все свои доли в кондитерской фабрике "Сласко" и создал компанию «Бизнес Консалтинг», задача которой - создание отделов активных продаж.</p>
-                <p>В 1997 году был приглашен для создания фармацевтической сети с доставкой на дом с нуля и успешно реализовал этот проект в течение 3-х лет.</p>
-                <p>В 2000 году по причине изменений в законодательстве запрещающих доставку лекарств на дом, перевел проект в обычный режим торговли и вернулся к консалтинговой деятельности в полном объеме своей занятости.</p>
-                <p>В 2003 году, изучая и совершенствуя навыки по построению отделов активных продаж, познакомился с МЛМ технологией. Изучив проблемы этой отрасли, пришел к выводу, что очень слабо построена система подготовки консультантов и создал авторский курс пошаговой методики строительства МЛМ сети.</p>
-                <p>С 2005 года проверил свою методику в компании Эдельстар. В результате - квалификация Бриллиантового директора за 1 год работы и структура в 3 500 человек.</p>
-                <p>В 2006 году проверил методику в китайской компании Виналайт. Результат - Бриллиантовый директор со структурой около 7 000 человек.</p>
-                <p>В 2008 году заинтересовался инвестированием в ценные бумаги и получил успешный опыт работы совместно с компанией Финам.</p>
-                <p>С 2010 года переехал на постоянное место жительства в г. Санкт-Петербург.</p>
-                <p>В 2010 году, работая в двух направлениях - сетевой маркетинг и инвестирование в ценные бумаги - увеличил собственный капитал и основал компанию по доставке на дом продуктов питания с элементами сетевого маркетинга. Этот проект в течении 2-х лет не удавалось вывести на прибыль. В результате продолжительных испытаний и понимания того, как этот проект развивать, было принято решение основать компанию Едоша.</p>
-                <p>С 2012 года Генеральный директор компании Едоша. Деятельность компании - производство и продажа продуктов питания с доставкой на дом по системе МЛМ продвижения. В течении 3 лет была выстроена самая крупная сеть МЛМ в России на продуктах питания, которая достигла размера 830 000 человек.</p>
-                <p>С 2017 года Вице-президент компании ONE SHOP WORLD LTD.</p>
+              <div class="show-qnt">
+                Показать
+                <a class="show-qnt__button" href="#">12</a>
+                <a class="show-qnt__button" href="#">24</a>
+                <a class="show-qnt__button" href="#">36</a>
               </div>
             </div>
-            <div class="grey-block">
-              <p class="big-text">Задачи Вице-президента:</p>
-              <ul>
-                <li>Разработка стратегии развития компании;</li>
-                <li>Поиск новых технологий ведения бизнеса;</li>
-                <li>Создание и развитие сети партнеров МЛМ направления;</li>
-                <li>Разработка учебной программы для Академии OneShop;</li>
-                <li>Переговоры со всеми крупными стратегическими поставщиками и подрядчиками;</li>
-                <li>Заключение крупных договоров на поставки в различные страны сети OneShop;</li>
-                <li>Управление недвижимостью и другими активами компании;</li>
-                <li>Разработка стратегии развития компании;</li>
-                <li>Поиск новых технологий ведения бизнеса;</li>
-                <li>Создание и развитие сети партнеров МЛМ направления;</li>
-                <li>Разработка учебной программы для Академии OneShop.</li>
-              </ul>
+            <div class="catalog-list catalog-list--type_1">
+              <div class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__info">
+                    <p class="catalog-item__title">
+                      <a href="catalog-detail.html">
+                        <span class="catalog-item__image"><img src="images/content/catalog/img_1.jpg" alt=""></span>
+                        Набор № 1
+                      </a>
+                    </p>
+                  </div>
+                  <div class="catalog-item__buy-block">
+                    <p class="catalog-item__price">3000 ₽</p>
+                    <div class="catalog-item__quantity quantity">
+                      <button class="quantity__button" type="button" title="Уменьшить">
+                        <svg class="quantity__button-icon" aria-hidden="true">
+                          <use xlink:href="#minus" />
+                        </svg>
+                      </button>
+                      <input class="quantity__input" type="text" value="1">
+                      <button class="quantity__button" type="button" title="Увеличить">
+                        <svg class="quantity__button-icon" aria-hidden="true">
+                          <use xlink:href="#plus" />
+                        </svg>
+                      </button>
+                    </div>
+                    <a class="catalog-item__button" href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__info">
+                    <p class="catalog-item__title">
+                      <a href="catalog-detail.html">
+                        <span class="catalog-item__image"><img src="images/content/catalog/img_2.jpg" alt=""></span>
+                        Набор № 2
+                      </a>
+                    </p>
+                  </div>
+                  <div class="catalog-item__buy-block">
+                    <p class="catalog-item__price">3000 ₽</p>
+                    <div class="catalog-item__quantity quantity">
+                      <button class="quantity__button" type="button" title="Уменьшить">
+                        <svg class="quantity__button-icon" aria-hidden="true">
+                          <use xlink:href="#minus" />
+                        </svg>
+                      </button>
+                      <input class="quantity__input" type="text" value="1">
+                      <button class="quantity__button" type="button" title="Увеличить">
+                        <svg class="quantity__button-icon" aria-hidden="true">
+                          <use xlink:href="#plus" />
+                        </svg>
+                      </button>
+                    </div>
+                    <a class="catalog-item__button disabled">Нет в наличии</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__info">
+                    <span class="catalog-item__label">Новинка</span>
+                    <p class="catalog-item__title">
+                      <a href="catalog-detail.html">
+                        <span class="catalog-item__image"><img src="images/content/catalog/img_3.jpg" alt=""></span>
+                        Офисный набор и 200 визитных карточек
+                      </a>
+                    </p>
+                    <p class="catalog-item__description">Набор брендированной продукции с символикой ПСПФНР для работы и проведения мероприятий.</p>
+                  </div>
+                  <div class="catalog-item__buy-block">
+                    <p class="catalog-item__price">3000 ₽</p>
+                    <div class="catalog-item__quantity quantity">
+                      <button class="quantity__button" type="button" title="Уменьшить">
+                        <svg class="quantity__button-icon" aria-hidden="true">
+                          <use xlink:href="#minus" />
+                        </svg>
+                      </button>
+                      <input class="quantity__input" type="text" value="1">
+                      <button class="quantity__button" type="button" title="Увеличить">
+                        <svg class="quantity__button-icon" aria-hidden="true">
+                          <use xlink:href="#plus" />
+                        </svg>
+                      </button>
+                    </div>
+                    <a class="catalog-item__button" href="#">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-bottom">
+              <ol class="pager">
+                <li class="pager__item">
+                  <a class="pager__link disabled" title="Назад">
+                    <svg class="pager__icon" aria-hidden="true">
+                      <use xlink:href="#prev_arrow" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="pager__item"><a class="pager__link is-active" href="#">1</a></li>
+                <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+                <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+                <li class="pager__item">
+                  <a class="pager__link" href="#" title="Вперёд">
+                    <svg class="pager__icon" aria-hidden="true">
+                      <use xlink:href="#next_arrow" />
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+              <a class="js-go-top go-top" href="#">
+                <svg class="pager__icon" aria-hidden="true">
+                  <use xlink:href="#arrow_up" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>

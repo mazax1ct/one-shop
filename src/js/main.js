@@ -143,3 +143,17 @@ $(window).on("orientationchange", function(event) {
     }
   }
 });
+
+//кнопка наверх в каталоге
+$(document).on('click', '.js-go-top', function () {
+  $('html, body').animate({scrollTop:0}, '300');
+  return false;
+});
+
+$(document).on('click', '.js-catalog-view', function () {
+  $('.js-catalog-view').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.catalog-list').removeClass('catalog-list--type_1').removeClass('catalog-list--type_2').removeClass('catalog-list--type_3');
+  $('.catalog-list').addClass($(this).attr('data-target'));
+  return false;
+});
