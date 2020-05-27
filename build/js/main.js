@@ -8,9 +8,26 @@ var resize_scroll = function(e) {
   }
 };
 
+//одинаковая высота блоков в таблице описания
+function equalHeight(selector){
+	var tallest = 0;
+	$(selector).each(function() {
+		var thisHeight = $(this).height();
+		if(thisHeight > tallest) {
+			tallest = thisHeight;
+		}
+	});
+	$(selector).height(tallest);
+}
+
 $(document).ready(function () {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  //одинаковая высота блоков в таблице описания
+  if($('body').width() > 1260) {
+    equalHeight('.catalog-description td');
+  }
 
   //кастомный скролл
   $('.js-custom-scroll').each(function(index, element) {
@@ -121,6 +138,10 @@ $(window).resize(function() {
       }, 100);
     }
   }
+
+  if($('body').width() > 1260) {
+    equalHeight('.catalog-description td');
+  }
 });
 
 //открепляем и перезапускаем прилипающий блок при повороте устройства
@@ -141,6 +162,10 @@ $(window).on("orientationchange", function(event) {
         }
       }, 100);
     }
+  }
+
+  if($('body').width() > 1260) {
+    equalHeight('.catalog-description td');
   }
 });
 
