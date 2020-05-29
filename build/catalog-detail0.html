@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>One-shop - Каталог</title>
+  <title>One-shop - Каталог детальная страница</title>
 
   <meta name="description" content="">
 
@@ -190,7 +190,7 @@
                 <span class="user-link__text">Вход</span>
               </a>
               <span class="header__user-links-separate"></span>
-              <a class="header__user-link user-link" href="cart.html">
+              <a class="header__user-link user-link" href="#">
                 <span class="user-link__icon-block">
                   <svg class="user-link__icon" aria-hidden="true">
                     <use xlink:href="#cart" />
@@ -243,194 +243,145 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
-          <li class="breadcrumbs__item">Каталог</li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-section.html">Продуктовые наборы</a></li>
+          <li class="breadcrumbs__item">Набор №8</li>
         </ul>
-        <div class="page-columns">
-          <div class="page-columns__left">
-            <div class="js-sticky-block">
-              <div class="js-selectbox selectbox">
-                <div class="selectbox__value">Все товары</div>
-                <ul id="float-nav" class="float-nav selectbox__list">
-                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="#">Все товары</a></li>
-                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Информационные продукты</a></li>
-                  <li class="float-nav__item selectbox__item">
-                    <a class="float-nav__link selectbox__link" href="#">Продуктовые наборы</a>
-                    <ul class="sub-menu">
-                      <li><a class="selected" href="#">Директорская школа</a></li>
-                      <li><a href="#">Офисные наборы</a></li>
-                      <li><a href="#">Уровни доступа СиРБиО</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="js-content-with-sticky page-columns__right">
-            <h1>Каталог</h1>
-            <div class="catalog-filter">
-              <ol class="pager">
-                <li class="pager__item">
-                  <a class="pager__link disabled" title="Назад">
-                    <svg class="pager__icon" aria-hidden="true">
-                      <use xlink:href="#prev_arrow" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="pager__item"><a class="pager__link is-active" href="#">1</a></li>
-                <li class="pager__item"><a class="pager__link" href="#">2</a></li>
-                <li class="pager__item"><a class="pager__link" href="#">3</a></li>
-                <li class="pager__item">
-                  <a class="pager__link" href="#" title="Вперёд">
-                    <svg class="pager__icon" aria-hidden="true">
-                      <use xlink:href="#next_arrow" />
-                    </svg>
-                  </a>
-                </li>
-              </ol>
-              <div class="catalog-view-block">
-                Вид
-                <button class="js-catalog-view catalog-view is-active" type="button" title="Плитка" data-target="catalog-list--type_1">
-                  <svg class="catalog-view__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_view_1" />
+        <div class="catalog-detail">
+          <div class="catalog-detail__image-block"><div class="catalog-detail__image"><img src="images/content/catalog/img_7.jpg" alt=""></div></div>
+          <div class="catalog-detail__info">
+            <p class="catalog-detail__label">Новинка</p>
+            <h1 class="catalog-detail__title">Офисный набор и 100 визитных карточек</h1>
+            <p class="catalog-detail__producer"><span>Производитель</span> OneShop</p>
+            <div class="catalog-detail__buy-block">
+              <p class="catalog-detail__price">3000 ₽</p>
+              <div class="catalog-detail__quantity quantity">
+                <button class="quantity__button" type="button" title="Уменьшить">
+                  <svg class="quantity__button-icon" aria-hidden="true">
+                    <use xlink:href="#minus" />
                   </svg>
                 </button>
-                <button class="js-catalog-view catalog-view" type="button" title="Таблица" data-target="catalog-list--type_2">
-                  <svg class="catalog-view__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_view_2" />
-                  </svg>
-                </button>
-                <button class="js-catalog-view catalog-view" type="button" title="Компактный" data-target="catalog-list--type_3">
-                  <svg class="catalog-view__icon" aria-hidden="true">
-                    <use xlink:href="#catalog_view_3" />
+                <input class="quantity__input" type="text" value="1">
+                <button class="quantity__button" type="button" title="Увеличить">
+                  <svg class="quantity__button-icon" aria-hidden="true">
+                    <use xlink:href="#plus" />
                   </svg>
                 </button>
               </div>
-              <div class="show-qnt">
-                Показать
-                <a class="show-qnt__button" href="#">12</a>
-                <a class="show-qnt__button" href="#">24</a>
-                <a class="show-qnt__button" href="#">36</a>
-              </div>
-            </div>
-            <div class="catalog-list catalog-list--type_1">
-              <div class="catalog-list__item">
-                <div class="catalog-item">
-                  <div class="catalog-item__info">
-                    <p class="catalog-item__title">
-                      <a href="catalog-detail.html">
-                        <span class="catalog-item__image"><img src="images/content/catalog/img_1.jpg" alt=""></span>
-                        Набор № 1
-                      </a>
-                    </p>
-                  </div>
-                  <div class="catalog-item__buy-block">
-                    <p class="catalog-item__price">3000 ₽</p>
-                    <div class="catalog-item__quantity quantity">
-                      <button class="quantity__button" type="button" title="Уменьшить">
-                        <svg class="quantity__button-icon" aria-hidden="true">
-                          <use xlink:href="#minus" />
-                        </svg>
-                      </button>
-                      <input class="quantity__input" type="text" value="1">
-                      <button class="quantity__button" type="button" title="Увеличить">
-                        <svg class="quantity__button-icon" aria-hidden="true">
-                          <use xlink:href="#plus" />
-                        </svg>
-                      </button>
-                    </div>
-                    <a class="catalog-item__button" href="#">В корзину</a>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-list__item">
-                <div class="catalog-item">
-                  <div class="catalog-item__info">
-                    <p class="catalog-item__title">
-                      <a href="catalog-detail.html">
-                        <span class="catalog-item__image"><img src="images/content/catalog/img_2.jpg" alt=""></span>
-                        Набор № 2
-                      </a>
-                    </p>
-                  </div>
-                  <div class="catalog-item__buy-block">
-                    <p class="catalog-item__price">3000 ₽</p>
-                    <div class="catalog-item__quantity quantity">
-                      <button class="quantity__button" type="button" title="Уменьшить">
-                        <svg class="quantity__button-icon" aria-hidden="true">
-                          <use xlink:href="#minus" />
-                        </svg>
-                      </button>
-                      <input class="quantity__input" type="text" value="1">
-                      <button class="quantity__button" type="button" title="Увеличить">
-                        <svg class="quantity__button-icon" aria-hidden="true">
-                          <use xlink:href="#plus" />
-                        </svg>
-                      </button>
-                    </div>
-                    <a class="catalog-item__button disabled">Нет в наличии</a>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-list__item">
-                <div class="catalog-item">
-                  <div class="catalog-item__info">
-                    <span class="catalog-item__label">Новинка</span>
-                    <p class="catalog-item__title">
-                      <a href="catalog-detail.html">
-                        <span class="catalog-item__image"><img src="images/content/catalog/img_3.jpg" alt=""></span>
-                        Офисный набор и 200 визитных карточек
-                      </a>
-                    </p>
-                    <p class="catalog-item__description">Набор брендированной продукции с символикой ПСПФНР для работы и проведения мероприятий.</p>
-                  </div>
-                  <div class="catalog-item__buy-block">
-                    <p class="catalog-item__price">3000 ₽</p>
-                    <div class="catalog-item__quantity quantity">
-                      <button class="quantity__button" type="button" title="Уменьшить">
-                        <svg class="quantity__button-icon" aria-hidden="true">
-                          <use xlink:href="#minus" />
-                        </svg>
-                      </button>
-                      <input class="quantity__input" type="text" value="1">
-                      <button class="quantity__button" type="button" title="Увеличить">
-                        <svg class="quantity__button-icon" aria-hidden="true">
-                          <use xlink:href="#plus" />
-                        </svg>
-                      </button>
-                    </div>
-                    <a class="catalog-item__button" href="#">В корзину</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-bottom">
-              <ol class="pager">
-                <li class="pager__item">
-                  <a class="pager__link disabled" title="Назад">
-                    <svg class="pager__icon" aria-hidden="true">
-                      <use xlink:href="#prev_arrow" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="pager__item"><a class="pager__link is-active" href="#">1</a></li>
-                <li class="pager__item"><a class="pager__link" href="#">2</a></li>
-                <li class="pager__item"><a class="pager__link" href="#">3</a></li>
-                <li class="pager__item">
-                  <a class="pager__link" href="#" title="Вперёд">
-                    <svg class="pager__icon" aria-hidden="true">
-                      <use xlink:href="#next_arrow" />
-                    </svg>
-                  </a>
-                </li>
-              </ol>
-              <a class="js-go-top go-top" href="#">
-                <svg class="pager__icon" aria-hidden="true">
-                  <use xlink:href="#arrow_up" />
-                </svg>
-              </a>
+              <a class="catalog-detail__button" href="#">В корзину</a>
             </div>
           </div>
         </div>
+        <p class="big-text">Описание</p>
+        <div class="catalog-description">
+          <table>
+            <tr>
+              <th class="text-center">№</th>
+              <th>Наименование<br> товаров</th>
+            </tr>
+            <tr>
+              <td class="text-center">1.</td>
+              <td>Ряпушка сибирская натуральная с добавлением масла 210 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">2.</td>
+              <td>Налим филе обжаренный в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">3.</td>
+              <td>Щука обжаренная в масле 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">4.</td>
+              <td>Налим в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">5.</td>
+              <td>Налим филе натуральный с добавлением масла 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">6.</td>
+              <td>Язь копченый в масле 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">7.</td>
+              <td>Ряпушка сибирская в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">8.</td>
+              <td>Тефтели частиковые в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">9.</td>
+              <td>Сырок в желе 240 гр. ж/б</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th class="text-center">№</th>
+              <th>Наименование<br> товаров</th>
+            </tr>
+            <tr>
+              <td class="text-center">10.</td>
+              <td>Сырок обжаренный в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">11.</td>
+              <td>Щука в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">12.</td>
+              <td>Язь натуральный с добавлением масла 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">13.</td>
+              <td>Сырок в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">14.</td>
+              <td>Налим обжаренный в масле 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">15.</td>
+              <td>Ряпушка сибирская обжаренная в масле 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">16.</td>
+              <td>Щука обжаренная в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">17.</td>
+              <td>Ряпушка сибирская обжаренная в томатном соусе 240 гр. ж/б</td>
+            </tr>
+            <tr>
+              <td class="text-center">&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+        <p class="big-text">Комментарии</p>
+        <form class="comments-form" method="post" action="">
+          <div class="comments-form__row">
+            <div class="comments-form__row-item">
+              <label class="form-label" for="name">
+                <span class="form-label__text">Имя</span>
+                <input id="name" class="input" name="name" type="text">
+              </label>
+            </div>
+            <div class="comments-form__row-item">
+              <label class="form-label" for="email">
+                <span class="form-label__text">Email</span>
+                <input id="email" class="input" name="email" type="text">
+              </label>
+            </div>
+          </div>
+          <label class="form-label" for="comment">
+            <span class="form-label__text">Email</span>
+            <textarea id="comment" class="textarea" name="comment"></textarea>
+          </label>
+          <div class="comments-form__button-block">
+            <button class="button" type="submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
