@@ -177,14 +177,14 @@
     background-color: #F4F6F9
     font-size: 15px
     line-height: 23px
-    padding: 15px 25px 25px
+    padding: 25px 10px
 
     @media(min-width: 768px)
       align-items: center
       display: flex
       justify-content: space-between
       margin-bottom: 15px
-      padding: 10px 20px
+      padding: 20px
 
     @media(min-width: 1280px)
       flex-grow: 1
@@ -197,7 +197,6 @@
       margin-left: 0
       margin-right: 0
       margin-bottom: 15px
-      padding: 35px 40px 45px
 
   &__info-row
     margin-bottom: 10px
@@ -208,7 +207,7 @@
     @media(min-width: 1600px)
       display: flex
       justify-content: space-between
-      margin-bottom: 20px
+      margin-bottom: 15px
 
   &__info-title
     display: none
@@ -217,8 +216,8 @@
       border-bottom: 1px solid #B1B1B1
       display: block
       font-size: 21px
-      margin-bottom: 35px
-      padding-bottom: 30px
+      margin-bottom: 25px
+      padding-bottom: 25px
 
   &__price
     font-size: 18px
@@ -235,9 +234,9 @@
       border-left: none
       display: flex
       justify-content: space-between
-      margin-top: 45px
+      margin-top: 25px
       padding-left: 0
-      padding-top: 30px
+      padding-top: 25px
 
   &__summ-title
     @media(min-width: 768px)
@@ -276,6 +275,7 @@
 
 .cart-links
   margin-top: 15px
+  text-align: center
 
   &--type_1
     display: none
@@ -285,9 +285,10 @@
       justify-content: space-between
 
   &--type_2
-    @media(min-width: 768px)
-      display: flex
-      justify-content: space-between
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
 
     @media(min-width: 1600px)
       display: none
@@ -299,6 +300,7 @@
   font-size: 15px
   font-weight: 600
   line-height: 18px
+  min-height: 55px
   max-width: 300px
   padding:  12px 15px 13px
   text-decoration: none
