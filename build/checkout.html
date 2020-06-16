@@ -28,6 +28,9 @@
 <body>
 
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="user" viewBox="0 0 40 40">
+      <path d="M20,0.5C9.2,0.5,0.5,9.2,0.5,20S9.2,39.5,20,39.5S39.5,30.8,39.5,20S30.8,0.5,20,0.5z M30.1,33.7C27.2,35.7,23.8,37,20,37s-7.2-1.3-10.1-3.3v-1.1c0-2.8,2.3-5,5-5c0.9,0,2.2,0.9,5,0.9c2.9,0,4.2-0.9,5-0.9c2.8,0,5,2.3,5,5V33.7z M32.5,31.5C31.9,27.8,28.8,25,25,25c-1.6,0-2.4,0.9-5,0.9S16.6,25,15,25c-3.8,0-6.9,2.8-7.4,6.5C4.7,28.5,3,24.4,3,20c0-9.4,7.6-17,17-17s17,7.6,17,17C37,24.4,35.3,28.5,32.5,31.5z M20,9.3c-3.8,0-6.9,3.1-6.9,6.9s3.1,6.9,6.9,6.9s6.9-3.1,6.9-6.9S23.8,9.3,20,9.3z M20,20.6c-2.4,0-4.4-2-4.4-4.4s2-4.4,4.4-4.4s4.4,2,4.4,4.4S22.4,20.6,20,20.6z"/>
+    </symbol>
     <symbol id="vk" viewBox="0 0 40 40">
       <path d="M19.7,27.5h1.6c0,0,0.5-0.1,0.7-0.3c0.2-0.2,0.2-0.7,0.2-0.7s0-2.1,1-2.4c1-0.3,2.3,2,3.7,2.9c1,0.7,1.8,0.5,1.8,0.5l3.7,0c0,0,1.9-0.1,1-1.6c-0.1-0.1-0.5-1.1-2.7-3c-2.3-2.1-2-1.7,0.8-5.3c1.7-2.2,2.4-3.5,2.1-4c-0.2-0.5-1.4-0.4-1.4-0.4l-4.1,0c0,0-0.3,0-0.5,0.1c-0.2,0.1-0.4,0.4-0.4,0.4s-0.7,1.7-1.5,3.1c-1.8,3-2.6,3.2-2.9,3c-0.7-0.4-0.5-1.7-0.5-2.7c0-2.9,0.5-4.1-0.9-4.4c-0.4-0.1-0.8-0.2-1.9-0.2c-1.5,0-2.7,0-3.4,0.3c-0.5,0.2-0.8,0.7-0.6,0.7c0.3,0,0.9,0.2,1.2,0.6c0.4,0.6,0.4,1.8,0.4,1.8s0.2,3.4-0.6,3.8c-0.6,0.3-1.3-0.3-2.9-3c-0.8-1.4-1.5-2.9-1.5-2.9s-0.1-0.3-0.3-0.4c-0.3-0.2-0.6-0.2-0.6-0.2l-3.9,0c0,0-0.6,0-0.8,0.3c-0.2,0.2,0,0.7,0,0.7s3.1,6.9,6.5,10.4C16.1,27.7,19.7,27.5,19.7,27.5L19.7,27.5z"/>
     </symbol>
@@ -478,14 +481,35 @@
                     </div>
                   </div>
                 </div>
-                <div class="checkout-otal">
+                <div class="checkout-total">
                   <div class="checkout-total__info">
                     <p class="checkout-total__info-row"><span>Общий вес:</span> <span>8.6 кг</span></p>
                     <p class="checkout-total__info-row">Товаров на: <span class="checkout-total__price">6600 ₽</span></p>
                     <p class="checkout-total__info-row">В том числе НДС: <span class="checkout-total__price">0 ₽</span></p>
                     <p class="checkout-total__summ"><span class="checkout-total__summ-title">Итого:</span> <span class="checkout-total__summ-price">16 000 ₽</span></p>
                   </div>
-                  <button class="checkout-total__button" type="button">Оформить заказ</button>
+                  <button class="checkout-total__button" type="button" data-fancybox="checkout-finish" data-src="#checkout-finish">Оформить заказ</button>
+                  <div id="checkout-finish" class="checkout-popup">
+                    <h3>Пожалуйста, проверьте указанные данные<br> и подтвердите отправку заказа.</h3>
+                    <p>
+                        ФИО покупателя: <b id="prop_fio">Учетка Админа</b><br>
+                        E-mail покупателя: <b id="prop_mail">support@psp.nixiz.ru</b><br>
+                        Телефон покупателя: <b id="prop_tel">79052222222</b><br><br>
+                        Способ оплаты: <b id="prop_payment">C внутреннего счета</b><br><br>
+                        Способ доставки: <b id="prop_delivery">Доставка СДЭК</b><br><br>
+                        Город доставки: <b id="prop_city">Санкт-Петербург, Ленинградская область, Россия</b><br><br>
+                        Индекс: <b id="prop_index">192281</b><br>
+                        Улица: <b id="prop_street">Маяковского улица</b><br>
+                        Дом: <b id="prop_house">47</b><br>
+                        Квартира: <b id="prop_apt">-</b><br>
+                        ФИО получателя: <b id="prop_fio_rec">рлорплорп олп орпорп</b><br>
+                        Телефон получателя: <b id="prop_tel_rec">+77905222222</b><br>
+                    </p>
+                    <div class="checkout-popup__buttons">
+                        <a class="simple-button simple-button--red" href="javascript:void();" onclick="closeConfirmPopup(); return false;" tabindex="-1">Исправить данные</a>
+                        <a class="simple-button simple-button--green" href="javascript:void();" onclick="applyConfirmPopup(); return false;" tabindex="-1">Оформить заказ</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

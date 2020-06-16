@@ -264,14 +264,35 @@
                     </div>
                   </div>
                 </div>
-                <div class="checkout-otal">
+                <div class="checkout-total">
                   <div class="checkout-total__info">
                     <p class="checkout-total__info-row"><span>Общий вес:</span> <span>8.6 кг</span></p>
                     <p class="checkout-total__info-row">Товаров на: <span class="checkout-total__price">6600 ₽</span></p>
                     <p class="checkout-total__info-row">В том числе НДС: <span class="checkout-total__price">0 ₽</span></p>
                     <p class="checkout-total__summ"><span class="checkout-total__summ-title">Итого:</span> <span class="checkout-total__summ-price">16 000 ₽</span></p>
                   </div>
-                  <button class="checkout-total__button" type="button">Оформить заказ</button>
+                  <button class="checkout-total__button" type="button" data-fancybox="checkout-finish" data-src="#checkout-finish">Оформить заказ</button>
+                  <div id="checkout-finish" class="checkout-popup">
+                    <h3>Пожалуйста, проверьте указанные данные<br> и подтвердите отправку заказа.</h3>
+                    <p>
+                        ФИО покупателя: <b id="prop_fio">Учетка Админа</b><br>
+                        E-mail покупателя: <b id="prop_mail">support@psp.nixiz.ru</b><br>
+                        Телефон покупателя: <b id="prop_tel">79052222222</b><br><br>
+                        Способ оплаты: <b id="prop_payment">C внутреннего счета</b><br><br>
+                        Способ доставки: <b id="prop_delivery">Доставка СДЭК</b><br><br>
+                        Город доставки: <b id="prop_city">Санкт-Петербург, Ленинградская область, Россия</b><br><br>
+                        Индекс: <b id="prop_index">192281</b><br>
+                        Улица: <b id="prop_street">Маяковского улица</b><br>
+                        Дом: <b id="prop_house">47</b><br>
+                        Квартира: <b id="prop_apt">-</b><br>
+                        ФИО получателя: <b id="prop_fio_rec">рлорплорп олп орпорп</b><br>
+                        Телефон получателя: <b id="prop_tel_rec">+77905222222</b><br>
+                    </p>
+                    <div class="checkout-popup__buttons">
+                        <a class="simple-button simple-button--red" href="javascript:void();" onclick="closeConfirmPopup(); return false;" tabindex="-1">Исправить данные</a>
+                        <a class="simple-button simple-button--green" href="javascript:void();" onclick="applyConfirmPopup(); return false;" tabindex="-1">Оформить заказ</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
