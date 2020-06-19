@@ -160,7 +160,7 @@
     .catalog-item__info
       flex-grow: 1
 
-    .catalog-item__label
+    .catalog-item__labels
       left: auto
       position: absolute
       right: 10px
@@ -228,7 +228,7 @@
     .catalog-item__info
       margin-bottom: 32px
 
-    .catalog-item__label
+    .catalog-item__labels
       left: auto
       position: absolute
       right: 25px
@@ -282,7 +282,7 @@
     .catalog-item__info
       padding-right: 20px
 
-    .catalog-item__label
+    .catalog-item__labels
       left: 115px
       position: absolute
       top: 0
@@ -342,6 +342,9 @@
 .catalog-item
   border: 1px solid #DCDCDC
 
+  &__labels
+    display: flex
+
   &__label
     background-color: #FF121D
     color: #fff
@@ -349,6 +352,9 @@
     font-weight: 700
     line-height: 17px
     padding: 4px 9px
+
+    &:not(:last-child)
+      margin-right: 5px
 
   &__title
     display: block
@@ -623,33 +629,38 @@
   margin-bottom: 40px
 
   @media(min-width: 1280px)
-    display: flex
     margin-bottom: 90px
 
-  table
-    margin-bottom: 0
-
+  &__tables
+    margin-bottom: 40px
+    
     @media(min-width: 1280px)
-      width: 50%
+      display: flex
 
-    tr
-      td
-        &:first-child
-          padding: 20px 10px
-          width: 80px
-
-    &:nth-child(2)
-      margin-top: -1px
+    table
+      margin-bottom: 0
 
       @media(min-width: 1280px)
-        margin-top: 0
+        width: 50%
 
-      tbody
-        tr
-          &:first-child,
-          &:last-child
-            @media(max-width: 1279px)
-              display: none
+      tr
+        td
+          &:first-child
+            padding: 20px 10px
+            width: 80px
+
+      &:nth-child(2)
+        margin-top: -1px
+
+        @media(min-width: 1280px)
+          margin-top: 0
+
+        tbody
+          tr
+            &:first-child,
+            &:last-child
+              @media(max-width: 1279px)
+                display: none
 
 .comments-form
   max-width: 930px
