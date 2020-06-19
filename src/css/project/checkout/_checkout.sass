@@ -17,7 +17,11 @@
       width: 395px
 
   &__title
+    align-items: center
     border-bottom: 1px solid #D1D1D1
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
     margin-bottom: 40px
     margin-top: 40px
     padding-bottom: 25px
@@ -27,6 +31,10 @@
 
     &:first-child
       margin-top: 0
+
+    .buyer-info-toggle
+      border-bottom: 1px dotted
+      text-decoration: none
 
   &__row
     @media(min-width: 768px)

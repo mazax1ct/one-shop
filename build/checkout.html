@@ -252,8 +252,11 @@
         <form action="/" method="post">
           <div class="checkout">
             <div class="js-content-with-sticky checkout__left">
-              <p class="checkout__title">1. Информация для оплаты и доставки заказа</p>
-
+              <p class="checkout__title">
+                1. Информация для оплаты и доставки заказа
+                <a class="buyer-info-toggle" href="#" onclick="fGetBuyerProps(this); return false;">Развернуть</a>
+                <input type="hidden" name="showProps" id="showProps" value="N">
+              </p>
               <div class="select-wrapper">
                 <select class="js-select" style="width: 100%">
                   <option>Учётка админа</option>
