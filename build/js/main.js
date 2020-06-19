@@ -8,18 +8,6 @@ var resize_scroll = function(e) {
   }
 };
 
-//одинаковая высота блоков в таблице описания
-function equalHeight(selector){
-	var tallest = 0;
-	$(selector).each(function() {
-		var thisHeight = $(this).height();
-		if(thisHeight > tallest) {
-			tallest = thisHeight;
-		}
-	});
-	$(selector).height(tallest);
-}
-
 //расширение для select2
 (function($) {
 
@@ -127,11 +115,6 @@ function equalHeight(selector){
 $(document).ready(function () {
   //запуск функции навешивания класса на шапку
   resize_scroll();
-
-  //одинаковая высота блоков в таблице описания
-  if($('body').width() > 1260) {
-    equalHeight('.catalog-description td');
-  }
 
   //кастомный скролл для контейнера таблиц
   $('.js-custom-scroll').each(function(index, element) {
