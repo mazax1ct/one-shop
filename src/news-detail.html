@@ -33,8 +33,18 @@
           <li class="breadcrumbs__item">Новость детально</li>
         </ul>
         <div class="page-columns">
-          <div class="page-columns__left"></div>
-          <div class="page-columns__right">
+          <div class="page-columns__left">
+            <div class="js-sticky-block">
+              <div class="js-selectbox selectbox">
+                <div class="selectbox__value">Новости</div>
+                <ul id="float-nav" class="float-nav selectbox__list">
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="#">Новости</a></li>
+                  <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Архив новостей</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="js-content-with-sticky page-columns__right">
             <div class="text-block">
               <p class="news-date">01 апреля 2019</p>
               <h1 id="1">Новость детально</h1>
