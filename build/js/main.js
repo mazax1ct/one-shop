@@ -195,6 +195,44 @@ $(document).ready(function () {
       }
     }
   }
+
+  //слайдер больших картинок по 1
+  if ($('.js-simple-slider').length) {
+    $('.js-simple-slider').each(function (index, value) {
+
+      var slickElement = $(this);
+
+      var status = slickElement.parent().find('.js-slider-count');
+
+      var nav = slickElement.parent().find('.js-slider-nav');
+
+      slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        var sum = slick.slideCount;
+        if(i < 10) {
+          i = '0' + i;
+        }
+
+        if(sum < 10) {
+          sum = '0' + sum;
+        }
+
+        status.html('<span class="simple-slider-block__counter-current">'+i+'</span>' + ' <span class="simple-slider-block__counter-separator">/</span> <span class="simple-slider-block__counter-all"> ' + sum + '</span>');
+      });
+
+      slickElement.slick({
+        auto: false,
+        mobileFirst: true,
+        slidesToShow: 1,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow" title="Назад"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow" title="Вперед"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+        appendArrows: nav,
+        dots: false
+      });
+    });
+  }
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -237,7 +275,9 @@ $(window).resize(function() {
   }
 
   if($('body').width() > 1260) {
-    equalHeight('.catalog-description td');
+    if ($(".catalog-description td").length) {
+      equalHeight('.catalog-description td');
+    }
   }
 });
 
@@ -262,7 +302,9 @@ $(window).on("orientationchange", function(event) {
   }
 
   if($('body').width() > 1260) {
-    equalHeight('.catalog-description td');
+    if ($(".catalog-description td").length) {
+      equalHeight('.catalog-description td');
+    }
   }
 });
 
