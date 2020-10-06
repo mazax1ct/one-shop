@@ -31,6 +31,31 @@
       min-width: 139px
       width: 139px
 
+  &__lang
+    align-items: center
+    color: #ff121c
+    display: flex
+    margin-right: auto
+    margin-left: 24px
+
+    @media(min-width: 1280px)
+      display: none
+      margin-left: 0
+      margin-right: 0
+
+    a
+      color: #ff121c
+      padding: 5px 0
+
+      &.active
+        border-bottom-color: transparent !important
+        cursor: default
+        text-decoration: none
+
+    span
+      margin-left: 5px
+      margin-right: 5px
+
   &__menu-block
     display: flex
 
@@ -66,6 +91,32 @@
 
       @media(min-width: 1280px)
         display: none
+
+  &__service-menu
+    @media(min-width: 1280px)
+      align-items: center
+      display: flex
+
+    .header__lang
+      display: none
+      margin-left: 34px
+
+      @media(min-width: 1280px)
+        display: flex
+        font-size: 16px
+        line-height: 20px
+
+      @media(min-width: 1600px)
+        margin-left: 54px
+
+      a
+        border-bottom: 1px solid #ff121c
+        padding: 0 0 4px
+        text-decoration: none
+        transition: border-color 0.3s
+
+        &:hover
+          border-bottom-color: transparent
 
   &__links
     @media(min-width: 768px)
