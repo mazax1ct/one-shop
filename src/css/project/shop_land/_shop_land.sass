@@ -131,10 +131,14 @@
 
   &::before
     @media(min-width: 1024px)
+      box-shadow: 0 0 400px 400px rgba(#91bc64, 0.3)
+      height: 0
       content: ''
       left: 50%
-      top: 0
+      position: absolute
+      top: 50%
       transform: translateX(-50%)
+      width: 0
       z-index: -1
 
 .shop-section
