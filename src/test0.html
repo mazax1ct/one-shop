@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>One-shop - Оформление заказа</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/style.html
+</head>
+
+<body>
+
+    //= template/sprite.html
+
+    <style>
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .responsive-video iframe,
+        .responsive-video video,
+        .responsive-video object {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .test-wrapper {
+            background-color: #f1f3f5;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+            padding: 50px;
+        }
+
+        .test-wrapper .responsive-video {
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .test-step {
+            display: none;
+        }
+
+        .test-step.is-active {
+            display: block;
+        }
+
+        .test-answers {
+            counter-reset: my-counter 11;
+            margin-bottom: 30px;
+        }
+
+        .test-answers .radio-label::before {
+            counter-increment: my-counter -1;
+            content: counter(my-counter) ": ";
+        }
+    </style>
+
+    <div class="wrapper">
+
+
+        <div class="page-content">
+            <div class="container">
+
+                <h1 class="text-center">Беседа перед тестом</h1>
+
+                <div class="test-wrapper">
+                    <div class="responsive-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3njUrUzX7-k" title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <p class="text-center">Для определения Вашего уровня жизни предлагаем пройти тест.</p>
+
+                    <p class="text-center"><a class="button" href="test.html">ТЕСТ</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    //= template/scripts.html
+
+</body>
+
+</html>
