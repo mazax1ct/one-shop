@@ -206,10 +206,20 @@
         <div class="page-content">
             <div class="container">
 
-                <h1 class="text-center">Инструкция по прохождению теста</h1>
+                <h1 class="text-center">Беседа перед тестом</h1>
 
                 <div class="test-wrapper">
                     <div class="test-step is-active">
+                        <div class="responsive-video">
+                            <video poster="https://www.sibircentr.ru/bitrix/templates/2021/images/content/enter/poster.jpg" controls="controls">
+                                <source type="video/mp4" src="https://www.sibircentr.ru/images/content/video_new.mp4">
+                            </video>
+                        </div>
+                        <p class="text-center">Для определения Вашего уровня жизни предлагаем пройти тест.</p>
+                        <p class="text-center"><button class="js-next js-prepare button" type="button">ТЕСТ</button></p>
+                    </div>
+
+                    <div class="test-step">
                         <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
                         <p class="text-center"><button class="js-next js-start button" type="button">Начать тестирование</button></p>
                     </div>
@@ -1206,23 +1216,34 @@
             var stepsCount = $('.test-question').length;
             var currentStep;
 
+            if ($(this).hasClass('js-prepare')) {
 
-            if ($(this).hasClass('js-start')) {
+                $('h1').text('Инструкция по прохождению теста');
+                $(this).closest('.test-step').removeClass('is-active');
+                $(this).closest('.test-step').next('.test-step').addClass('is-active');
+
+            } else if ($(this).hasClass('js-start')) {
+
                 $(this).closest('.test-step').removeClass('is-active');
                 $('.test-questions').find('.test-question').eq(0).addClass('is-active');
 
                 currentStep = $('.test-question.is-active').index() + 1;
                 $('h1').text(currentStep + ' вопрос из ' + stepsCount);
+
             } else if ($(this).hasClass('js-finish')) {
+
                 $('h1').text('Получить результаты');
                 $(this).closest('.test-step').removeClass('is-active');
                 $('.test-questions').next('.test-step').addClass('is-active');
+
             } else {
+
                 $(this).closest('.test-step').removeClass('is-active');
                 $(this).closest('.test-step').next('.test-step').addClass('is-active');
 
                 currentStep = $('.test-question.is-active').index() + 1;
                 $('h1').text(currentStep + ' вопрос из ' + stepsCount);
+
             }
 
             return false;
