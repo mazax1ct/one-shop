@@ -162,13 +162,23 @@
             margin-left: auto;
             margin-right: auto;
             max-width: 1000px;
-            padding: 50px;
+            padding: 30px;
+        }
+
+        @media(min-width: 1000px) {
+            .test-wrapper {
+                padding: 50px;
+            }
         }
 
         .test-wrapper .responsive-video {
             margin-bottom: 20px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .test-wrapper h4 {
+            margin-bottom: 0;
         }
 
         .test-step {
@@ -184,9 +194,30 @@
             margin-bottom: 30px;
         }
 
-        .test-answers .radio-label::before {
+        .test-answers .radio-label .radio-icon::before {
+            align-items: center;
             counter-increment: my-counter -1;
-            content: counter(my-counter) ": ";
+            content: counter(my-counter) "";
+            display: flex;
+            justify-content: center;
+            height: 20px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+        }
+
+        .test-answers input[type="radio"]:checked+.radio-icon {
+            border-color: green;
+        }
+
+        .test-answers input[type="radio"]:checked+.radio-icon::before {
+            background-color: green;
+            content: counter(my-counter) "";
+            color: #fff;
+            height: 20px;
+            width: 20px;
         }
 
         .test-result-form {
@@ -201,7 +232,6 @@
     </style>
 
     <div class="wrapper">
-
 
         <div class="page-content">
             <div class="container">
@@ -227,6 +257,7 @@
                     <form class="test-questions" method="post">
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 1 из 15</h4>
                             <h2 class="text-center">Душевное состояние</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -290,6 +321,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 2 из 15</h4>
                             <h2 class="text-center">Чувство благодарности</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -353,6 +385,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 3 из 15</h4>
                             <h2 class="text-center">Отношения с детьми</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -416,6 +449,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 4 из 15</h4>
                             <h2 class="text-center">Отношения с родителями</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -479,6 +513,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 5 из 15</h4>
                             <h2 class="text-center">Личные отношения (со второй половиной)</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -542,6 +577,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 6 из 15</h4>
                             <h2 class="text-center">Состояние здоровья</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -605,6 +641,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 7 из 15</h4>
                             <h2 class="text-center">Окружение и друзья</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -668,6 +705,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 8 из 15</h4>
                             <h2 class="text-center">Физическая активность</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -731,6 +769,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 9 из 15</h4>
                             <h2 class="text-center">Отдых и развлечения</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -794,6 +833,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 10 из 15</h4>
                             <h2 class="text-center">Путешествия</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -857,6 +897,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 11 из 15</h4>
                             <h2 class="text-center">Вредные привычки</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -920,6 +961,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 12 из 15</h4>
                             <h2 class="text-center">Образование/ саморазвитие</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -983,6 +1025,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 13 из 15</h4>
                             <h2 class="text-center">Карьера/ бизнес</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -1046,6 +1089,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 14 из 15</h4>
                             <h2 class="text-center">Ежемесячный доход</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -1109,6 +1153,7 @@
 
                         <div class="test-step test-question">
                             <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
+                            <h4 class="text-center">Вопрос 15 из 15</h4>
                             <h2 class="text-center">Свободные накопления</h2>
                             <div class="test-answers">
                                 <label class="radio-label">
@@ -1213,9 +1258,6 @@
         });
 
         $(document).on('click', '.js-next', function() {
-            var stepsCount = $('.test-question').length;
-            var currentStep;
-
             if ($(this).hasClass('js-prepare')) {
 
                 $('h1').text('Инструкция по прохождению теста');
@@ -1227,12 +1269,10 @@
                 $(this).closest('.test-step').removeClass('is-active');
                 $('.test-questions').find('.test-question').eq(0).addClass('is-active');
 
-                currentStep = $('.test-question.is-active').index() + 1;
-                $('h1').text(currentStep + ' вопрос из ' + stepsCount);
-
+                $('h1').hide();
             } else if ($(this).hasClass('js-finish')) {
 
-                $('h1').text('Получить результаты');
+                $('h1').show().text('Получить результаты');
                 $(this).closest('.test-step').removeClass('is-active');
                 $('.test-questions').next('.test-step').addClass('is-active');
 
@@ -1240,9 +1280,6 @@
 
                 $(this).closest('.test-step').removeClass('is-active');
                 $(this).closest('.test-step').next('.test-step').addClass('is-active');
-
-                currentStep = $('.test-question.is-active').index() + 1;
-                $('h1').text(currentStep + ' вопрос из ' + stepsCount);
 
             }
 
