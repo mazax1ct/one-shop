@@ -194,6 +194,11 @@
             margin-bottom: 30px;
         }
 
+        .test-answers .radio-label {
+            cursor: pointer;
+        }
+
+        .test-answers .radio-label:hover .radio-icon::before,
         .test-answers .radio-label .radio-icon::before {
             align-items: center;
             counter-increment: my-counter -1;
@@ -208,6 +213,7 @@
             width: 20px;
         }
 
+        .test-answers .radio-label:hover .radio-icon,
         .test-answers input[type="radio"]:checked+.radio-icon {
             border-color: green;
         }
@@ -250,7 +256,7 @@
                     </div>
 
                     <div class="test-step">
-                        <p class="text-center">Выберите 1 вариант ответа и нажмите на кнопку «Далее»</p>
+                        <p class="text-center">В каждом вопросе выберите 1 вариант ответа, соответствующий Вашей текущей ситуации.<br> Отметьте его.<br> Затем нажмите на кнопку «Далее» и Вы перейдете к следующему вопросу.</p>
                         <p class="text-center"><button class="js-next js-start button" type="button">Начать тестирование</button></p>
                     </div>
 
