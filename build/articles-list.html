@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>One-shop - Главная</title>
+    <title>One-shop - Новости</title>
 
     <meta name="description" content="">
 
@@ -23,12 +23,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.css"/>
-
-    <link rel="stylesheet" href="css_include_once/aos.css" />
-    <link rel="stylesheet" href="css_include_once/cookie-popover.css" />
 </head>
 
-<body class="main-page">
+<body>
 
     <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="user" viewBox="0 0 40 40">
@@ -164,9 +161,6 @@
         <header class="header">
           <div class="header__inner container">
             <a class="header__logo" href="main.html"><img src="images/logo.png" alt="Oneshop"></a>
-            <div class="header__lang">
-              <a class="active" href="#">рус</a> <span>|</span> <a href="#">eng</a>
-            </div>
             <div class="header__menu-block">
               <div class="header__menus">
                 <nav class="main-menu">
@@ -180,15 +174,10 @@
                     <li class="main-menu__item"><a class="main-menu__link" href="sirbio.html">Партнерам</a></li>
                   </ul>
                 </nav>
-                <div class="header__service-menu">
-                  <ul class="service-menu">
-                    <li class="service-menu__item"><a class="service-menu__link" href="#">Написать нам</a></li>
-                    <li class="service-menu__item"><a class="service-menu__link" href="#">Тех. поддержка</a></li>
-                  </ul>
-                  <div class="header__lang">
-                    <a class="active" href="#">рус</a> <span>|</span> <a href="#">eng</a>
-                  </div>
-                </div>
+                <ul class="service-menu">
+                  <li class="service-menu__item"><a class="service-menu__link" href="#">Написать нам</a></li>
+                  <li class="service-menu__item"><a class="service-menu__link" href="#">Тех. поддержка</a></li>
+                </ul>
                 <div class="header__socials">
                   <a class="header__social social" href="#" title="vk.com" target="_blank">
                     <svg class="social__icon" aria-hidden="true">
@@ -220,12 +209,17 @@
               <div class="header__links">
                 <div class="header__user-links">
                   <a class="header__user-link user-link" href="#">
+                    <span class="user-link__icon-block user-link__icon-block--enter"></span>
+                    <span class="user-link__text">Вход</span>
+                  </a>
+                  <span class="header__user-links-separate"></span>
+                  <a class="header__user-link user-link" href="#">
                     <span class="user-link__icon-block">
                       <svg class="user-link__icon" aria-hidden="true">
-                        <use xlink:href="#user" />
+                        <use xlink:href="#reg" />
                       </svg>
                     </span>
-                    <span class="user-link__text">Кабинет</span>
+                    <span class="user-link__text">Регистрация</span>
                   </a>
                   <span class="header__user-links-separate"></span>
                   <a class="header__user-link user-link" href="cart.html">
@@ -278,132 +272,168 @@
         </header>
 
         <div class="page-content">
-
-            <div class="block-2 way">
-              <div class="block-2__images">
-                <div class="block-2__image-2" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_2/img_2@2.jpg" alt=""></div>
-                <div class="block-2__image-1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_2/img_1@2.jpg" alt=""></div>
-              </div>
-              <div class="block-2__text-block">
-                <div class="block-2__description">
-                  <p class="way__pre-title" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
-                  <h2 class="block-2__title way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Товары</h2>
-                  <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Мы провели огромную работу - ради одной цели. И эта цель - Сделать так, чтобы Вы были уверенны в том, что попадает к Вам на стол</p>
-                  <a class="way__button button" href="catalog-section.html" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
-                </div>
-                <!--<div class="block-2__decor" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_2/img_3@2.jpg" alt=""></div>-->
-              </div>
-            </div>
-
-            <div class="block-1 way">
-              <div class="block-1__image" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_1/img_1@2.jpg" alt=""></div>
-              <div class="block-1__text-block">
-                <div class="block-1__text-block-inner">
-                  <div class="block-1__decor" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_1/img_2@2.jpg" alt=""></div>
-                  <div class="block-1__description">
-                    <p class="way__pre-title" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
-                    <h1 class="way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">3D‑дома</h1>
-                    <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Забудьте все, что Вы знали о строительстве домов. Теперь собственное жилье доступно каждому</p>
-                    <a class="way__button button" href="#" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-3 way">
-              <div class="block-3__image" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_3/img_1@2.jpg" alt=""></div>
-              <div class="block-3__text-block">
-                <div class="block-3__text-block-inner">
-                  <div class="block-3__decor" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true"><img src="images/content/main-page/block_3/img_2@2.jpg" alt=""></div>
-                  <div class="block-3__description">
-                    <p class="block-3__pre-title way__pre-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Направление</p>
-                    <h1 class="block-3__title way__title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Топливная<br> программа</h1>
-                    <p class="way__text" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Вместе с компанией OneShop Вы прикоснетесь к миру больших денег</p>
-                    <a class="way__button button" href="fuel-program.html" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="container">
-                <div class="privilege-block">
-                  <div class="privilege-block__item" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-                    <div class="privilege-block__title">
-                      <h2>Привилегии партнеров</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lacus sollicitudin, molestie odio id, pulvinar tortor. Sed ac tristique lectus, vitae laoreet ligula. Donec luctus viverra neque nec luctus. Etiam venenatis nibh tellus.</p>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="articles.html">Новости</a></li>
+                    <li class="breadcrumbs__item">Бизнес в регионах</li>
+                </ul>
+                <div class="page-columns">
+                    <div class="page-columns__left">
+                        <div class="js-sticky-block">
+                            <div class="js-selectbox selectbox">
+                                <div class="selectbox__value">Новости</div>
+                                <ul id="float-nav" class="float-nav selectbox__list">
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Все новости</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Главное</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Магазины</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Анонсы событий</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Репортажи</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="#">Бизнес в регионах</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Новости по тегам</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Архив новостей</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#">
-                      <figure class="privilege-image">
-                        <img src="images/content/main-page/block_4/img_1@2.jpg" alt="" />
-                        <figcaption class="privilege-image__caption">Транспортная программа</figcaption>
-                      </figure>
-                    </a>
-                  </div>
-                  <div class="privilege-block__item" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-                    <div class="privilege-cols">
-                      <div class="privilege-cols__col">
-                        <a href="#">
-                          <figure class="privilege-image privilege-image--small">
-                            <img src="images/content/main-page/block_4/img_2@2.jpg" alt="" />
-                            <figcaption class="privilege-image__caption">Спортивная программа</figcaption>
-                          </figure>
-                        </a>
-                        <a href="#">
-                          <figure class="privilege-image privilege-image--small">
-                           <img src="images/content/main-page/block_4/img_4@2.jpg" alt="" />
-                           <figcaption class="privilege-image__caption">Санаторно‑курортная программа</figcaption>
-                          </figure>
-                        </a>
-                      </div>
-                      <div class="privilege-cols__col">
-                        <a href="#">
-                          <figure class="privilege-image privilege-image--small">
-                            <img src="images/content/main-page/block_4/img_3@2.jpg" alt="" />
-                            <figcaption class="privilege-image__caption">Страхование жизни</figcaption>
-                          </figure>
-                        </a>
-                        <a href="#">
-                          <figure class="privilege-image privilege-image--small">
-                           <img src="images/content/main-page/block_4/img_5@2.jpg" alt="" />
-                           <figcaption class="privilege-image__caption">Профессиональное обучение</figcaption>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    <div class="js-content-with-sticky page-columns__right">
 
-                <h2 class="h1 text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">О Компании</h2>
-                <div class="banner" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000" data-aos-mirror="false" data-aos-once="true">
-                  <div class="banner__image" style="background-image: url(images/content/main-page/block_5/img_1@2.jpg)"></div>
-                  <div class="banner__text-block">
-                    <h3 class="banner__title">One Shop - единый магазин доставки на дом и в офис продуктов, а также иных товаров первой необходимости.</h3>
-                    <p>Сделать заказ можно в личном кабинете или по бесплатному номеру телефона. Купить качественные и вкусные продукты, хозяйственные товары, организовать торжество дома или в офисе просто и удобно - нужно просто сделать заказ в One Shop!</p>
-                  </div>
-                </div>
+                        <div class="articles-list">
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
 
-                <div class="advantage-block">
-                  <h2 class="advantage-block__title h1">Наши<br> преимущества</h2>
-                  <div class="advantage-block__list">
-                    <div class="advantage-block__item" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-                      <div class="advantage">
-                        <div class="advantage__image advantage__image--big"><img src="images/content/main-page/block_6/img_1@2.jpg" alt=""></div>
-                        <p class="advantage__title">Любимые продукты для любимых клиентов</p>
-                      </div>
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a class="button" href="#">Показать больше</a>
+                        </div>
                     </div>
-                    <div class="advantage-block__item" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-                      <div class="advantage">
-                        <div class="advantage__image advantage__image--mid"><img src="images/content/main-page/block_6/img_2@2.jpg" alt=""></div>
-                        <p class="advantage__title">Мы выбираем только лучшие из&nbsp;них</p>
-                      </div>
-                    </div>
-                    <div class="advantage-block__item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">
-                      <div class="advantage">
-                        <div class="advantage__image advantage__image--small"><img src="images/content/main-page/block_6/img_3@2.jpg" alt=""></div>
-                        <p class="advantage__title">Огромный выбор всевозможных товаров</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
             </div>
         </div>
@@ -440,13 +470,6 @@
       </div>
     </footer>
 
-    <div class="cookie-popover">
-        <p>Мы используем cookie для скорости и вашего <a href="#">удобства</a>. Длинный текст для проверки того, что попповер растянется нормально.</p>
-        <button class="js-cookie-popover-closer cookie-popover__closer" type="button" title="Закрыть">
-            ОК
-        </button>
-    </div>
-
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>
     <script type="text/javascript" src="js/simplebar.min.js"></script>
@@ -455,37 +478,19 @@
     <script type="text/javascript" src="js/select2.full.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
-    <script type="text/javascript" src="js/aos.js"></script>
+    <script src="js/small-articles-slider.js"></script>
+
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/ddscrollspy.js"></script>
+    <script src="js/select-menu.js"></script>
     <script>
-        if ($('body').width() > 767) {
-            AOS.init();
-        }
-    </script>
-
-    <script>
-        function getMyCookie(name) {
-            var matches = document.cookie.match(new RegExp(
-                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-            ));
-            return matches ? decodeURIComponent(matches[1]) : undefined;
-        }
-
-        function showCookiePopover() {
-            var cookieShowed = getMyCookie("COOKIE_POPOVER");
-            if (cookieShowed != "Y") {
-                $('.cookie-popover').addClass('is-open');
-            }
-        }
-
         $(document).ready(function() {
-            setTimeout(showCookiePopover, 1000);
-        });
-
-        $(document).on("click", '.js-cookie-popover-closer', function() {
-            $('.cookie-popover').removeClass('is-open');
-            var date = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 7);
-            document.cookie = "COOKIE_POPOVER=Y; path=/; expires=" + date.toUTCString();
-            return false;
+            //превращаем меню в селект
+            if ($(".js-selectbox").length) {
+                if ($("body").width() < 1280) {
+                    $('.js-selectbox').selectbox();
+                }
+            }
         });
     </script>
 </body>
