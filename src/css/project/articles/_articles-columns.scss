@@ -41,6 +41,16 @@
         font-weight: 700;
         min-height: 48px;
         margin-bottom: 12px;
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $main-color;
+                text-decoration: underline;
+            }
+        }
     }
 }
 

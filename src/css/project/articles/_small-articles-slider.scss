@@ -9,6 +9,16 @@
         h1,
         h2 {
             margin-bottom: 0;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $main-color;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>One-shop - Новости</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/style.html
+</head>
+
+<body>
+
+    //= template/sprite.html
+
+    <div class="wrapper">
+
+        //= template/header.html
+
+        <div class="page-content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="articles.html">Новости</a></li>
+                    <li class="breadcrumbs__item">Бизнес в регионах</li>
+                </ul>
+                <div class="page-columns">
+                    <div class="page-columns__left">
+                        <div class="js-sticky-block">
+                            <div class="js-selectbox selectbox">
+                                <div class="selectbox__value">Новости</div>
+                                <ul id="float-nav" class="float-nav selectbox__list">
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Все новости</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Главное</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Магазины</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Анонсы событий</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Репортажи</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link selected" href="#">Бизнес в регионах</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Новости по тегам</a></li>
+                                    <li class="float-nav__item selectbox__item"><a class="float-nav__link selectbox__link" href="#">Архив новостей</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-content-with-sticky page-columns__right">
+
+                        <div class="articles__section">
+                            <h1>Новости по тегам</h1>
+
+                            <noindex>
+                                <div class="tags-list">
+                                    <a class="tag " href="/news/search/?tags=%D0%9B%D0%B8%D0%B4%D0%B5%D1%80%D1%8B" rel="nofollow">Лидеры</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%8B" rel="nofollow">Партнеры</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81+%D1%81+OneSW" rel="nofollow">Бизнес с OneSW</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8+%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2" rel="nofollow">Новости регионов</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%90%D0%BD%D0%BE%D0%BD%D1%81%D1%8B" rel="nofollow">Анонсы</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%BE%D1%84%D0%B8%D1%81" rel="nofollow">Центральный офис</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%D0%B8" rel="nofollow">Репортажи</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B" rel="nofollow">Магазины</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE" rel="nofollow">Руководство</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%9F%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8" rel="nofollow">Подарки</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%92%D0%BE%D1%81%D1%8C%D0%BC%D0%B8%D0%BB%D0%B5%D1%82%D0%B8%D0%B5+OneSW" rel="nofollow">Восьмилетие OneSW</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%95%D0%B6%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9+%D0%A2%D1%83%D1%80+OneSW-2025" rel="nofollow">Ежегодный Тур OneSW-2025</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%A0%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D1%8F" rel="nofollow">Реновация</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%90%D0%B2%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0" rel="nofollow">Автопрограмма</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0+%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8" rel="nofollow">Программа недвижимости</a>
+                                    <a class="tag " href="/news/search/?tags=%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3+OneSW" rel="nofollow">Тренинг OneSW</a>
+                                </div>
+                            </noindex>
+                        </div>
+
+                        <div class="articles-search">
+                            <form class="articles-search__form" action="" method="get">
+                                <input class="articles-search__input input" type="text" name="q" value="" size="40">
+                                <input class="articles-search__submit button button--green" type="submit" value="Искать">
+                                <input type="hidden" name="how" value="r">
+                            </form>
+
+                            <div class="search-language-guess">
+                                Запрос был исправлен на «вываорр». В запросе "<a href=""></a>" восстановлена раскладка клавиатуры.
+                            </div>
+                        </div>
+
+                        <div class="articles-list">
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="article">
+                                <div class="article__image"><img src="images/content/articles/img_4.jpg" alt=""></div>
+
+                                <div class="article__info">
+                                    <div class="article__title">В воскресенье One Shop Продукты в Рубцовске отметит годовщину со дня ребрендинга</div>
+
+                                    <div class="article__date">20 Февраля 2022</div>
+
+                                    <div class="article__preview">
+                                        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                            распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.</p>
+
+                                        <p>Здесь ваш текст. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                                            показывает,
+                                            как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий.</p>
+                                    </div>
+
+                                    <a class="article__more" href="#">
+                                        Читать дальше
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#more_arrow" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a class="button" href="#">Показать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+    <script src="js/small-articles-slider.js"></script>
+
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/ddscrollspy.js"></script>
+    <script src="js/select-menu.js"></script>
+    <script>
+        $(document).ready(function() {
+            //превращаем меню в селект
+            if ($(".js-selectbox").length) {
+                if ($("body").width() < 1280) {
+                    $('.js-selectbox').selectbox();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

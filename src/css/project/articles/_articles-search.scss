@@ -1,0 +1,25 @@
+.articles-search {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__input {
+        border-radius: 0;
+        flex-grow: 1;
+    }
+
+    &__submit {
+        @media(max-width: 768px - 0.02px) {
+            min-width: 100px;
+        }
+    }
+}
